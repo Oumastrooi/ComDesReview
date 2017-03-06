@@ -69,4 +69,37 @@ footer {
     .mtb {
       margin-bottom: 35em; } }
 
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pad {
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
+button {
+  border-radius: 10px;
+  font-family: 'usual', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #0A2335;
+  color: white;
+  padding: 10px;
+  box-shadow: none;
+  margin: 4px;
+  border: 3px solid #0A2335;
+  letter-spacing: 2px; }
+  button:hover {
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    color: #0A2335;
+    background-color: white; }
+
+.clicked {
+  color: #0A2335;
+  background-color: white; }
+
+:disabled {
+  opacity: .5; }
+
 /*# sourceMappingURL=main.css.map */
