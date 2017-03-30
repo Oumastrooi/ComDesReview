@@ -8,43 +8,51 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://use.typekit.net/hjd5wdr.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 </head>
 
 
-<link rel="stylesheet" href="main.css">
+<header class="container-fluid">
+    <div class="row mtb">
+        <div class="col-xs-4 col-xs-offset-1 col-sm-offset-2 col-md-offset-4">
+            <h1>Behind<br>the Design.</h1>
+            <h3> Be a part of the process.</h3>
+        </div>
+    </div>
+</header>
 
 
 
 
 <body>
-    <h1>Isotope - combination filters with toggle buttons</h1>
+    <h1>I'm looking for someone skilled in...</h1>
 
     <div class="filters">
 
         <div class="ui-group">
-            <h3>Color</h3>
-            <div class="button-group js-radio-button">
-                <button class="button" data-filter=".red">red</button>
-                <button class="button" data-filter=".blue">blue</button>
-                <button class="button" data-filter=".yellow">yellow</button>
-            </div>
-        </div>
-
-        <div class="ui-group">
-            <h3>Size</h3>
-            <div class="button-group js-radio-button-group">
-                <button class="button" data-filter=".small">small</button>
-                <button class="button" data-filter=".wide">wide</button>
-                <button class="button" data-filter=".big">big</button>
-                <button class="button" data-filter=".tall">tall</button>
-            </div>
-        </div>
-
-        <div class="ui-group">
-            <h3>Shape</h3>
-            <div class="button-group js-radio-button-group">
-                <button class="button" data-filter=".round">round</button>
-                <button class="button" data-filter=".square">square</button>
+            <div class="js-radio-button">
+                <button class="button" id="branding" data-filter=".branding">Branding</button>
+                <button class="button" id="UXUI" data-filter=".UXUI">UX|UI</button>
+                <button class="button" id="illustration" data-filter=".illustration">Illustration</button>
+                <button class="button" id="typography" data-filter=".typography">Typography</button>
+                <button class="button" id="advertising" data-filter=".advertising">Advertising</button>
+                <button class="button" id="video" data-filter=".video">Video</button>
+                <button class="button" id="packaging" data-filter=".packaging">Package Design</button>
+                <button class="button" id="photography" data-filter=".photography">Photography</button>
+                <button class="button" id="product" data-filter=".product">Product Design</button>
+                <button class="button" id="editorial" data-filter=".editorial">Editorial Design</button>
+                <button class="button" id="frontend" data-filter=".frontend">Front End Development</button>
+                <button class="button" id="responsive" data-filter=".responsive">Responsive Design</button>
             </div>
         </div>
 

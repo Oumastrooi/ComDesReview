@@ -12,31 +12,32 @@ body {
 .button {
     display: inline-block;
     padding: 0.5em 1.0em;
-    background: #EEE;
+    background: #0A2335;
     border: none;
     border-radius: 7px;
-    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2));
-    color: #222;
-    font-family: sans-serif;
-    font-size: 16px;
-    text-shadow: 0 1px white;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1em;
     cursor: pointer;
+    padding-left: 3em;
+    border: 3px solid #0A2335;
+    margin: .25em .25em .25em .25em;
 }
 
 .button:hover {
-    background-color: #8CF;
-    text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-    color: #222;
+    background-color: white;
+    color: #0A2335;
 }
 
 .button:active,
 .button.is-checked {
-    background-color: #28F;
+    background-color: white;
+    color: #0A2335;
 }
 
 .button.is-checked {
     color: white;
-    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+    color: #0A2335;
 }
 
 .button:active {
@@ -44,27 +45,150 @@ body {
 }
 
 
-/* ---- button-group ---- */
+/* button icons*/
 
-.button-group:after {
-    content: '';
-    display: block;
-    clear: both;
+#branding {
+    background-image: url(img/Portfolio-Icons/Branding_Light.png);
 }
 
-.button-group .button {
-    float: left;
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 1px;
+#branding:hover {
+    background-image: url(img/Portfolio-Icons/Branding_Dark.png);
 }
 
-.button-group .button:first-child {
-    border-radius: 0.5em 0 0 0.5em;
+#branding.is-checked {
+    background-image: url(img/Portfolio-Icons/Branding_Dark.png);
 }
 
-.button-group .button:last-child {
-    border-radius: 0 0.5em 0.5em 0;
+#UXUI {
+    background-image: url(img/Portfolio-Icons/UXUI_Light.png);
+}
+
+#UXUI:hover {
+    background-image: url(img/Portfolio-Icons/UXUI_Dark.png);
+}
+
+#UXUI.is-checked {
+    background-image: url(img/Portfolio-Icons/UXUI_Dark.png);
+}
+
+#illustration {
+    background-image: url(img/Portfolio-Icons/Illustration_Light.png);
+}
+
+#illustration:hover {
+    background-image: url(img/Portfolio-Icons/Illustration_Dark.png);
+}
+
+#illustration.is-checked {
+    background-image: url(img/Portfolio-Icons/Illustration_Dark.png);
+}
+
+#typography {
+    background-image: url(img/Portfolio-Icons/Typography_Light.png);
+}
+
+#typography:hover {
+    background-image: url(img/Portfolio-Icons/Typography_Dark.png);
+}
+
+#typography.is-checked {
+    background-image: url(img/Portfolio-Icons/Typography_Dark.png);
+}
+
+#advertising {
+    background-image: url(img/Portfolio-Icons/Advertising_Light.png);
+}
+
+#advertising:hover {
+    background-image: url(img/Portfolio-Icons/Advertising_Dark.png);
+}
+
+#advertising.is-checked {
+    background-image: url(img/Portfolio-Icons/Advertising_Dark.png);
+}
+
+#video {
+    background-image: url(img/Portfolio-Icons/Video_Light.png);
+}
+
+#video:hover {
+    background-image: url(img/Portfolio-Icons/Video_Dark.png);
+}
+
+#video.is-checked {
+    background-image: url(img/Portfolio-Icons/Video_Dark.png);
+}
+
+#packaging {
+    background-image: url(img/Portfolio-Icons/Packaging_Light.png);
+}
+
+#packaging:hover {
+    background-image: url(img/Portfolio-Icons/Packaging_Dark.png);
+}
+
+#packaging.is-checked {
+    background-image: url(img/Portfolio-Icons/Packaging_Dark.png);
+}
+
+#photography {
+    background-image: url(img/Portfolio-Icons/Photography_Light.png);
+}
+
+#photography:hover {
+    background-image: url(img/Portfolio-Icons/Photography_Dark.png);
+}
+
+#photography.is-checked {
+    background-image: url(img/Portfolio-Icons/Photography_Dark.png);
+}
+
+#product {
+    background-image: url(img/Portfolio-Icons/Product_Light.png);
+}
+
+#product:hover {
+    background-image: url(img/Portfolio-Icons/Product_Dark.png);
+}
+
+#product.is-checked {
+    background-image: url(img/Portfolio-Icons/Product_Dark.png);
+}
+
+#editorial {
+    background-image: url(img/Portfolio-Icons/Editorial_Light.png);
+}
+
+#editorial:hover {
+    background-image: url(img/Portfolio-Icons/Editorial_Dark.png);
+}
+
+#editorial.is-checked {
+    background-image: url(img/Portfolio-Icons/Editorial_Dark.png);
+}
+
+#frontend {
+    background-image: url(img/Portfolio-Icons/FrontEnd_Light.png);
+}
+
+#frontend:hover {
+    background-image: url(img/Portfolio-Icons/FrontEnd_Dark.png);
+}
+
+#frontend.is-checked {
+    background-image: url(img/Portfolio-Icons/FrontEnd_Dark.png);
+}
+
+#responsive {
+    background-image: url(img/Portfolio-Icons/Responsive_Light.png);
+}
+
+#responsive:hover {
+    background-image: url(img/Portfolio-Icons/Responsive_Dark.png);
+}
+
+#responsive.is-checked {
+    background-image: url(img/Portfolio-Icons/Responsive_Dark.png);
 }
 
 
