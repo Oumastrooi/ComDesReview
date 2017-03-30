@@ -10,7 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+
 
     <!--Import from butterfly styles -->
     <link href="css/butterfly_style.css" rel="stylesheet">
@@ -18,6 +18,12 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- My Style Sheet EDIT ONLY THIS ONE!!! -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -27,6 +33,9 @@
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/isotope.min">
+    </script>
+    <script src="js/myjavascript.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
@@ -56,6 +65,7 @@
     </nav>
     <aside>
     </aside>
+
     <header class="container-fluid">
         <div class="row mtb">
             <div class="col-xs-4 col-xs-offset-1 col-sm-offset-2 col-md-offset-4">
@@ -66,231 +76,41 @@
     </header>
 
 
-    <div class="portfolio-top"></div>
-
-    <!-- Portfolio Plus Filters -->
-    <div class="portfolio">
-
-        <!-- Portfolio Filters -->
-        <div id="filters" class="sixteen columns">
-            <ul class="clearfix">
-                <li>
-                    <a id="all" href="#" data-filter="*" class="active">
-                        <h5>All</h5>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#" data-filter=".branding">
-                        <h5>Branding</h5>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#" data-filter=".design">
-                        <h5>Design</h5>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#" data-filter=".photography">
-                        <h5>Photography</h5>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#" data-filter=".videography">
-                        <h5>Videography</h5>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#" data-filter=".web">
-                        <h5>Web</h5>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--/Portfolio Filters -->
-
-        <!-- Portfolio Wrap -->
-        <div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
-
-            <!-- Portfolio Item With PrettyPhoto  -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>
-                <a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio2.jpg">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <div class="zoom-icon"></div>
-                            <h4 class="project-name">Leica Camera</h4>
-                            <p class="project-categories">Videography</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!--/Portfolio Item With PrettyPhoto  -->
-
-            <!-- Portfolio Item Video Expander  -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-                <div class="project-overlay">
-                    <div class="open-project-link">
-                        <a class="open-project" href="http://clapat.ro/themes/newave/project-video-expander.html" title="Open Project"></a>
-                    </div>
-                    <div class="project-info">
-                        <div class="zoom-icon"></div>
-                        <h4 class="project-name">Foto Template</h4>
-                        <p class="project-categories">Design</p>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item Video Expander  -->
-
-            <!-- Portfolio Item Normal Expander -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-                <div class="project-overlay">
-                    <div class="open-project-link">
-                        <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-1.html" title="Open Project"></a>
-                    </div>
-                    <div class="project-info">
-                        <div class="zoom-icon"></div>
-                        <h4 class="project-name">Sony Phone</h4>
-                        <p class="project-categories">Design</p>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item Normal Expander -->
-
-            <!-- Portfolio Item FullScreen Expander -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-                <div class="project-overlay">
-                    <div class="open-project-link">
-                        <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-1.html" title="Open Project"></a>
-                    </div>
-                    <div class="project-info">
-                        <div class="zoom-icon"></div>
-                        <h4 class="project-name">Nike Shoes</h4>
-                        <p class="project-categories">Photography, Web, Branding</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Item FullScreen Expander -->
-
-            <!-- Portfolio Item FullScreen Expander -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-                <div class="project-overlay">
-                    <div class="open-project-link">
-                        <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-2.html" title="Open Project"></a>
-                    </div>
-                    <div class="project-info">
-                        <div class="zoom-icon"></div>
-                        <h4 class="project-name">Vinyl Record</h4>
-                        <p class="project-categories">Design</p>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item FullScreen Expander -->
-
-            <!-- Portfolio Item Normal Expander -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-                <div class="project-overlay">
-                    <div class="open-project-link">
-                        <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-2.html" title="Open Project"></a>
-                    </div>
-                    <div class="project-info">
-                        <div class="zoom-icon"></div>
-                        <h4 class="project-name">iPhone</h4>
-                        <p class="project-categories">Web</p>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item Normal Expander -->
-
-            <!-- Portfolio Item External Project  -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
-                <a href="http://clapat.ro/themes/newave/project-external-1.html" class="external">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <div class="zoom-icon"></div>
-                            <h4 class="project-name">Nexus Phone</h4>
-                            <p class="project-categories">Design, Web</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!--/Portfolio Item External Project  -->
-
-            <!-- Portfolio Item With PrettyPhoto  -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   photography isotope-item">
-                <div class="portfolio-image"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-                <a title="Stereo Headphones" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio8.jpg">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <div class="zoom-icon"></div>
-                            <h4 class="project-name">Art Frame</h4>
-                            <p class="project-categories">Photography</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!--/Portfolio Item With PrettyPhoto  -->
-
-        </div>
-        <!--/Portfolio Wrap -->
-
-    </div>
-    <!--/Portfolio Plus Filters -->
-
-    <div class="portfolio-bottom"></div>
-
-    <!-- Project Page Holder-->
-    <div id="project-page-holder">
-        <div class="clear"></div>
-        <div id="project-page-data"></div>
-    </div>
-    <!--/Project Page Holder-->
-
-    </section>
-    <!--/Portfolio -->
-
-
-    <!--
-    <section id='Filters'>
+    <section id="Filters">
         <div class="container-fluid">
             <div class="row">
                 <div class="centered pad">
                     <h3> I'm interested in finding <br> someone skilled in ... </h3>
                 </div>
             </div>
-            <div class="row centered">
-                <button type="button" id="Branding" name="Branding" value="Branding">Branding</button>
-                <button type="button" id="Typography" name="Typography" value="Typography">Typography</button>
-                <button type="button" id="UX|UI" name="UX|UI" value="UX|UI">UX|UI</button>
-                <button type="button" id="Illustration" name="Illustration" value="Illustration">Illustration</button>
-                <button type="button" id="Product_Design" name="Product_Design" value="Product_Design">Product Design</button>
+            <div class="row centered filter-buttons">
+                <button type="button" data-filter ".branding">Branding</button>
+                <button type="button" data-filter=".typography">Typography</button>
+                <button type="button" data-filter=".ux">UX|UI</button>
+                <button type="button" data-filter=".illustration">Illustration</button>
+                <button type="button" data-filter=".product">Product Design</button>
             </div>
-            <div class="row centered">
-                <button type="button" id="Video" name="Video" value="Video">Video</button>
-                <button type="button" id="Responsive_Design" name="Responsive_Design" value="Responsive_Design">Responsive Design</button>
-                <button type="button" id="Photography" name="Photography" value="Photography">Photography</button>
-                <button type="button" id="Editorial_Design" name="Editorial_Design" value="Editorial_Design">Editorial Design</button>
+            <div class="row centered filter-buttons">
+                <button type="button" data-filter=".video">Video</button>
+                <button type="button" data-filter=".responsive">Responsive Design</button>
+                <button type="button" data-filter=".photography">Photography</button>
+                <button type="button" data-filter=".editorial">Editorial Design</button>
             </div>
-            <div class="row centered">
-                <button type="button" id="Front_End_Development" name="Front_End_Development" value="Front_End_Development">Front End Development</button>
-                <button type="button" id="Advertising" name="Advertising" value="Advertising">Advertising</button>
-                <button type="button" id="Package_Design" name="Package_Design" value="Package_Design">Package Design</button>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="centered pad">
-                <h3> Displaying 3 of 49 Designers</h3>
+            <div class="row centered filter-buttons">
+                <button type="button" data-filter=".dev">Front End Development</button>
+                <button type="button" data-filter=".advertising">Advertising</button>
+                <button type="button" data-filter=".package">Package Design</button>
             </div>
 
         </div>
     </section>
-    -->
+
+
+
+    <!-- the filtered portfolio list goes here -->
+    <div class="grid">
+
+    </div>
 
     <section id='Portfolio_List'>
     </section>
@@ -304,11 +124,13 @@
 
 
 
-   
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Include all custom js/jquery -->
     <script src="js/application.js"></script>
+    <script src=js/myjavascript.js>
+    </script>
 
 
 </body>

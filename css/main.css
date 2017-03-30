@@ -3,7 +3,8 @@ h2,
 h3,
 p {
   font-family: 'usual', Arial, Helvetica, sans-serif;
-  color: #0A2335; }
+  color: #0A2335;
+  text-transform: none; }
 
 h1 {
   display: inline-block;
@@ -19,7 +20,7 @@ h1 {
 h2 {
   font-size: 1.7em;
   font-weight: 400;
-  line-height: 24pt; }
+  line-height: 20pt; }
 
 h3 {
   display: inline-block;
@@ -101,5 +102,31 @@ button {
 
 :disabled {
   opacity: .5; }
+
+#filters ul li a h5 {
+  border-radius: 10px;
+  font-family: 'usual', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #0A2335;
+  color: white;
+  box-shadow: none;
+  border: 3px solid #0A2335;
+  letter-spacing: 2px; }
+  #filters ul li a h5:hover {
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    color: #0A2335;
+    background-color: white; }
+  #filters ul li a h5:active {
+    color: #0A2335;
+    background-color: white; }
+  #filters ul li a h5:focus {
+    color: #0A2335;
+    background-color: white; }
+
+#filters ul li a:hover h5,
+#filters ul li a.active h5 {
+  color: #0A2335;
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
