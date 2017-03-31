@@ -3,7 +3,22 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'usual', Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    text-align: center;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 15px 15px 15px 15px;
 }
 
 
@@ -197,6 +212,8 @@ body {
 .grid {
     background: #EEE;
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -206,26 +223,6 @@ body {
     content: '';
     display: block;
     clear: both;
-}
-
-
-/* ui group */
-
-.ui-group {
-    display: inline-block;
-}
-
-.ui-group h3 {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 32px;
-    margin-right: 0.2em;
-    font-size: 16px;
-}
-
-.ui-group .button-group {
-    display: inline-block;
-    margin-right: 20px;
 }
 
 
