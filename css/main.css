@@ -1,132 +1,297 @@
-h1,
-h2,
-h3,
-p {
-  font-family: 'usual', Arial, Helvetica, sans-serif;
-  color: #0A2335;
-  text-transform: none; }
+* {
+    box-sizing: border-box;
+}
 
-h1 {
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 4.6em;
-  font-weight: 700;
-  letter-spacing: 0pt;
-  margin-top: 2em; }
-  @media (max-width: 599px) {
-    h1 {
-      font-size: 3em; } }
+body {
+    font-family: 'usual', Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-h2 {
-  font-size: 1.7em;
-  font-weight: 400;
-  line-height: 20pt; }
-
-h3 {
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 1.7em;
-  font-weight: 700;
-  line-height: 24pt;
-  margin: 0px; }
-
-p {
-  font-size: .84em;
-  font-weight: 400;
-  line-height: 15pt; }
-
-nav {
-  background-color: #0A2335; }
-
-header {
-  color: #0A2335;
-  position: relative;
-  min-height: 350px;
-  background: url("../img/hero.jpg") no-repeat scroll 0px 100%/cover transparent;
-  background-color: #0A2335; }
-
-aside {
-  position: absolute;
-  display: none;
-  background-color: #009E9E;
-  width: 60%; }
-
-section {
-  background-color: #FFC44C; }
-
-footer {
-  background-color: #ED5E5E; }
-
-.mtb {
-  margin-top: 3em;
-  margin-bottom: 30em; }
-  @media (max-width: 599px) {
-    .mtb {
-      margin-bottom: 25em; } }
-  @media (min-width: 600px) {
-    .mtb {
-      margin-bottom: 40em; } }
-  @media (min-width: 1200px) {
-    .mtb {
-      margin-bottom: 35em; } }
+h4 {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
 
 .centered {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.pad {
-  padding-top: 4em;
-  padding-bottom: 4em; }
+section {
+    padding: 15px 15px 15px 15px;
+}
 
-button {
-  border-radius: 10px;
-  font-family: 'usual', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  background-color: #0A2335;
-  color: white;
-  padding: 10px;
-  box-shadow: none;
-  margin: 4px;
-  border: 3px solid #0A2335;
-  letter-spacing: 2px; }
-  button:hover {
-    transition-duration: .2s;
-    -webkit-transition-duration: .2s;
+
+/* ---- button ---- */
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    background: #0A2335;
+    border: none;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding-left: 3em;
+    border: 3px solid #0A2335;
+    margin: .25em .25em .25em .25em;
+}
+
+.button:hover {
+    background-color: white;
     color: #0A2335;
-    background-color: white; }
+}
 
-.clicked {
-  color: #0A2335;
-  background-color: white; }
-
-:disabled {
-  opacity: .5; }
-
-#filters ul li a h5 {
-  border-radius: 10px;
-  font-family: 'usual', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  background-color: #0A2335;
-  color: white;
-  box-shadow: none;
-  border: 3px solid #0A2335;
-  letter-spacing: 2px; }
-  #filters ul li a h5:hover {
-    transition-duration: .2s;
-    -webkit-transition-duration: .2s;
+.button:active,
+.button.is-checked {
+    background-color: white;
     color: #0A2335;
-    background-color: white; }
-  #filters ul li a h5:active {
-    color: #0A2335;
-    background-color: white; }
-  #filters ul li a h5:focus {
-    color: #0A2335;
-    background-color: white; }
+}
 
-#filters ul li a:hover h5,
-#filters ul li a.active h5 {
-  color: #0A2335;
-  background-color: white; }
+.button.is-checked {
+    color: white;
+    color: #0A2335;
+}
 
-/*# sourceMappingURL=main.css.map */
+.button:active {
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+.first-row {
+    width: 670px;
+    margin: 0px auto;
+}
+
+.two-row {
+    width: 640px;
+    margin: 0px auto;
+}
+
+.three-row {
+    width: 745px;
+    margin: 0px auto;
+}
+
+.col-sm-offset-2 {
+    margin: 0px auto;
+}
+
+
+/* button icons*/
+
+#branding {
+    background-image: url(../img/Portfolio-Icons/Branding_Light.png);
+}
+
+#branding:hover {
+    background-image: url(../img/Portfolio-Icons/Branding_Dark.png);
+}
+
+#branding.is-checked {
+    background-image: url(../img/Portfolio-Icons/Branding_Dark.png);
+}
+
+#UXUI {
+    background-image: url(../img/Portfolio-Icons/UXUI_Light.png);
+}
+
+#UXUI:hover {
+    background-image: url(../img/Portfolio-Icons/UXUI_Dark.png);
+}
+
+#UXUI.is-checked {
+    background-image: url(../img/Portfolio-Icons/UXUI_Dark.png);
+}
+
+#illustration {
+    background-image: url(../img/Portfolio-Icons/Illustration_Light.png);
+}
+
+#illustration:hover {
+    background-image: url(../img/Portfolio-Icons/Illustration_Dark.png);
+}
+
+#illustration.is-checked {
+    background-image: url(../img/Portfolio-Icons/Illustration_Dark.png);
+}
+
+#typography {
+    background-image: url(../img/Portfolio-Icons/Typography_Light.png);
+}
+
+#typography:hover {
+    background-image: url(../img/Portfolio-Icons/Typography_Dark.png);
+}
+
+#typography.is-checked {
+    background-image: url(../img/Portfolio-Icons/Typography_Dark.png);
+}
+
+#advertising {
+    background-image: url(../img/Portfolio-Icons/Advertising_Light.png);
+}
+
+#advertising:hover {
+    background-image: url(../img/Portfolio-Icons/Advertising_Dark.png);
+}
+
+#advertising.is-checked {
+    background-image: url(../img/Portfolio-Icons/Advertising_Dark.png);
+}
+
+#video {
+    background-image: url(../img/Portfolio-Icons/Video_Light.png);
+}
+
+#video:hover {
+    background-image: url(../img/Portfolio-Icons/Video_Dark.png);
+}
+
+#video.is-checked {
+    background-image: url(../img/Portfolio-Icons/Video_Dark.png);
+}
+
+#packaging {
+    background-image: url(../img/Portfolio-Icons/Packaging_Light.png);
+}
+
+#packaging:hover {
+    background-image: url(../img/Portfolio-Icons/Packaging_Dark.png);
+}
+
+#packaging.is-checked {
+    background-image: url(../img/Portfolio-Icons/Packaging_Dark.png);
+}
+
+#photography {
+    background-image: url(../img/Portfolio-Icons/Photography_Light.png);
+}
+
+#photography:hover {
+    background-image: url(../img/Portfolio-Icons/Photography_Dark.png);
+}
+
+#photography.is-checked {
+    background-image: url(../img/Portfolio-Icons/Photography_Dark.png);
+}
+
+#product {
+    background-image: url(../img/Portfolio-Icons/Product_Light.png);
+}
+
+#product:hover {
+    background-image: url(../img/Portfolio-Icons/Product_Dark.png);
+}
+
+#product.is-checked {
+    background-image: url(../img/Portfolio-Icons/Product_Dark.png);
+}
+
+#editorial {
+    background-image: url(../img/Portfolio-Icons/Editorial_Light.png);
+}
+
+#editorial:hover {
+    background-image: url(../img/Portfolio-Icons/Editorial_Dark.png);
+}
+
+#editorial.is-checked {
+    background-image: url(../img/Portfolio-Icons/Editorial_Dark.png);
+}
+
+#frontend {
+    background-image: url(../img/Portfolio-Icons/FrontEnd_Light.png);
+}
+
+#frontend:hover {
+    background-image: url(../img/Portfolio-Icons/FrontEnd_Dark.png);
+}
+
+#frontend.is-checked {
+    background-image: url(../img/Portfolio-Icons/FrontEnd_Dark.png);
+}
+
+#responsive {
+    background-image: url(../img/Portfolio-Icons/Responsive_Light.png);
+}
+
+#responsive:hover {
+    background-image: url(../img/Portfolio-Icons/Responsive_Dark.png);
+}
+
+#responsive.is-checked {
+    background-image: url(../img/Portfolio-Icons/Responsive_Dark.png);
+}
+
+
+/* ---- isotope ---- */
+
+.grid {
+    background: #EEE;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* clear fix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*students*/
+
+#houserA {
+    background-image: url(../img/headshots/hauserA.bw.jpg);
+}
+
+
+/* delete this when students are ready */
+
+
+/* color-shape */
+
+.color-shape {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    float: left;
+}
+
+.color-shape.round {
+    border-radius: 35px;
+}
+
+.color-shape.big.round {
+    border-radius: 75px;
+}
+
+.color-shape.red {
+    background: red;
+}
+
+.color-shape.blue {
+    background: blue;
+}
+
+.color-shape.yellow {
+    background: yellow;
+}
+
+.color-shape.wide,
+.color-shape.big {
+    width: 150px;
+}
+
+.color-shape.tall,
+.color-shape.big {
+    height: 150px;
+}
