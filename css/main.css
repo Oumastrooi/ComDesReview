@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+html {
+    font-size:12pt; /* Adjust for REM */
+	line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  CSS STARTS HERE    */
+
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +73,7 @@ body {
     font-family: 'usual', Arial, Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 h4 {
@@ -19,16 +87,268 @@ h4 {
     margin-right: auto;
 }
 
-section {
-    padding: 15px 15px 15px 15px;
+.container-fluid {
+    padding: 0rem;
 }
+
+section {
+    
+}
+
+
+
+/* ----------- LANDING PAGE -------------*/
+
+
+.landing_header {
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    position: fixed;
+}
+
+.landing_header p{
+    
+    color: #DBDCDD;
+    font-family: 'usual' , sans-serif;
+    width: 99%;
+    font-size: 1.4rem;
+    margin-left: 1.5%
+}
+
+.landing_header h1{
+    
+    color: #DBDCDD;
+    font-family: 'usual' , sans-serif;
+    width: 99%;
+    font-size: 1rem;
+    margin-left: 1.5%
+}
+
+
+.header_lockup {
+    
+    position: absolute;
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+.bd_logo {
+    float: left;
+    display: inline-block;
+    width: 6%;
+}
+
+.header_type {
+    font-size: 1rem!important;
+    float: left;
+    display: inline-block;
+    color: #DBDCDD;
+    margin-left: 3%!important;
+    width: 56%!important;
+    margin-top: 2%;
+    position: absolute;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+        
+    
+}
+
+.dots {
+    position: absolute;
+    right: 0;
+    top: 2.3%;
+}
+
+.color1 {
+    width: 45%;
+    background-color: #0A2436;
+    height: 100vh;
+    float: left;
+    display: inline-block;
+    z-index: -99;
+}
+
+.color2 {
+    width: 55%;
+    background-color: #009D9D;
+    height: 100vh;
+    float: right;
+    display: inline-block;
+    z-index: -99;
+}
+
+.logo_lockup {
+    
+    position: absolute;
+    margin-left: 30.4%;
+    margin-top: 17%;
+    width: 55%;
+
+}
+
+.razor_logo {
+    position: absolute;
+    bottom: 4%;
+    width: 10%;
+    left: 30%;
+}
+
+.txst_logo {
+    position: absolute;
+    bottom: 2%;
+    width: 10%;
+    right: 40%;
+}
+
+
+
+.process {
+    animation-delay: .3s;
+    animation-timing-function: ease-out;
+}
+
+.event_details {
+    
+    animation-delay: .5s;
+    animation-timing-function: ease-out;
+
+}
+
+
+/* --------- PORTFOLIO SECTION -------*/
+
+#filtered-portfolio {
+    
+    background-color: #FFC34D;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 100vh;
+    position: absolute;
+    width: 100%;
+
+}
+
+#filtered-portfolio h4 {
+    margin-bottom: 2rem;
+}
+
+.js-radio-button {
+
+}
+
+.view_portfolio_link {
+    
+    position: fixed;
+    width: 14rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 30rem auto 0rem!important;
+    left: 0;
+    right: 0;
+    background-color: #DBDCDD;
+    border: none;
+    padding: .5rem;
+    bottom: 0;
+}
+
+.view_portfolio_link p{
+    font-size: .8rem;
+    color: #0A2436;
+    font-family: 'usual', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    line-height: .9rem;
+    width: 75%; 
+    clear: both;
+    display: inline-block;
+    float: left;
+    margin-top: .45rem;
+    margin-left: .5rem;
+}
+
+.view_portfolio_link a {
+    text-decoration: none;
+}
+
+.view_portfolio_link a:hover{
+    text-decoration: none;
+
+}
+
+
+#portfolio_anchor {
+position: absolute;
+    width: 25%;
+    margin-top: 57.59%
+}
+
+/*  --------- ARROW BOUNCE --------- */
+
+.scroll_arrow_div {
+    width: 15%;
+    float: right;
+    margin-right: .5rem;
+}
+
+
+
+
+.scroll_arrows {
+    
+    width: 73%!important;
+    margin: 0rem auto 0rem;
+    padding-top: 0rem;
+    float: right
+    -webkit-animation: scroll_button 2s infinite; /* Safari 4+ */
+    -moz-animation:    scroll_button 2s infinite; /* Fx 5+ */
+    -o-animation:      scroll_button 2s infinite; /* Opera 12+ */
+    animation:         scroll_button 2s infinite; /* IE 10+, Fx 29+ */
+    
+   
+    
+   
+    
+}
+    
+    .scroll_arrows_2 {
+    
+    width: 73%!important;
+    margin: -.3rem auto 0rem;
+    padding-top: 0rem;
+    -webkit-animation: scroll_button 2s infinite; /* Safari 4+ */
+    -moz-animation:    scroll_button 2s infinite; /* Fx 5+ */
+    -o-animation:      scroll_button 2s infinite; /* Opera 12+ */
+    animation:         scroll_button 2s infinite; /* IE 10+, Fx 29+ */
+        animation-timing-function:ease-in-out;
+       
+   
+    
+}
+    
+    .scroll_arrows_3 {
+    
+    width: 73%!important;
+    margin: -.3rem auto 0rem;
+    padding-top: 0rem;
+    -webkit-animation: scroll_button 2s infinite; /* Safari 4+ */
+    -moz-animation:    scroll_button 2s infinite; /* Fx 5+ */
+    -o-animation:      scroll_button 2s infinite; /* Opera 12+ */
+    animation:         scroll_button 2s infinite; /* IE 10+, Fx 29+ */
+   animation-timing-function:ease-in;
+    
+}
+
 
 
 /* ---- button ---- */
 
 .button {
     display: inline-block;
-    padding: 0.5em 1.0em;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
     background: #0A2335;
     border: none;
     border-radius: 7px;
@@ -36,7 +356,7 @@ section {
     color: white;
     font-size: 1em;
     cursor: pointer;
-    padding-left: 3em;
+    padding-left: 3rem;
     border: 3px solid #0A2335;
     margin: .25em .25em .25em .25em;
 }
@@ -85,6 +405,8 @@ section {
 
 #branding {
     background-image: url(../img/Portfolio-Icons/Branding_Light.png);
+    transition: background-image .6s ease-in-out;
+    
 }
 
 #branding:hover {
@@ -97,6 +419,7 @@ section {
 
 #UXUI {
     background-image: url(../img/Portfolio-Icons/UXUI_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #UXUI:hover {
@@ -109,6 +432,7 @@ section {
 
 #illustration {
     background-image: url(../img/Portfolio-Icons/Illustration_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #illustration:hover {
@@ -117,10 +441,12 @@ section {
 
 #illustration.is-checked {
     background-image: url(../img/Portfolio-Icons/Illustration_Dark.png);
+    
 }
 
 #typography {
     background-image: url(../img/Portfolio-Icons/Typography_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #typography:hover {
@@ -133,6 +459,7 @@ section {
 
 #advertising {
     background-image: url(../img/Portfolio-Icons/Advertising_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #advertising:hover {
@@ -145,6 +472,7 @@ section {
 
 #video {
     background-image: url(../img/Portfolio-Icons/Video_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #video:hover {
@@ -157,6 +485,7 @@ section {
 
 #packaging {
     background-image: url(../img/Portfolio-Icons/Packaging_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #packaging:hover {
@@ -169,6 +498,7 @@ section {
 
 #photography {
     background-image: url(../img/Portfolio-Icons/Photography_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #photography:hover {
@@ -181,6 +511,7 @@ section {
 
 #product {
     background-image: url(../img/Portfolio-Icons/Product_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #product:hover {
@@ -193,6 +524,7 @@ section {
 
 #editorial {
     background-image: url(../img/Portfolio-Icons/Editorial_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #editorial:hover {
@@ -205,6 +537,7 @@ section {
 
 #frontend {
     background-image: url(../img/Portfolio-Icons/FrontEnd_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #frontend:hover {
@@ -217,6 +550,7 @@ section {
 
 #responsive {
     background-image: url(../img/Portfolio-Icons/Responsive_Light.png);
+    transition: background-image .6s ease-in-out;
 }
 
 #responsive:hover {
@@ -294,4 +628,214 @@ section {
 .color-shape.tall,
 .color-shape.big {
     height: 150px;
+}
+
+
+
+
+
+/* MEDIA QUERIES START HERE  */
+
+
+
+
+
+
+
+/*    MOBILE     */
+
+@media screen and (max-width : 767px) {
+    
+    
+    .splash_img_desktop {
+        display: none;
+    
+    }
+    
+    .lander_img_tablet {
+        display: none;
+    }
+    
+    .lander_info_lockup {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        right: 13%;
+    }
+    
+    .header_lockup {
+        width: 85%;
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    
+    .bd_logo {
+        width: 8%
+    }
+    
+    .header_type {
+        width: 100%!important;
+        font-size: .9rem!important;
+    }
+    
+    .logo_lockup {
+        width: 75%!important;
+    }
+    
+    .logo_lockup h1 {
+        width: 100%!important;
+        font-size: .8rem;
+    }
+    
+   
+    
+    .dots {
+        margin-top: 1.7rem;
+        right: -31.3%!important;
+        
+        z-index: ;
+    }
+        
+        .razor_logo {
+            width: 23%;
+            bottom: 5.5%;
+            left: 13%
+        }
+        
+        .txst_logo {
+            width: 23%;
+            bottom: 4%;
+            right: 16%;
+        }
+    
+    .js-radio-button {
+        width: 95%!important;
+        margin: 0 auto;
+    }
+    
+    
+        
+        .first-row {
+    width: 100%;
+    margin: 0px auto;
+}
+    
+     .two-row {
+    width: 100%;
+    margin: 0px auto;
+
+}
+    
+    .three-row {
+    width: 100%;
+    margin: 0px auto;
+    
+}
+    
+    
+    
+    #portfolio_anchor {
+position: absolute;
+    width: 25%;
+    margin-top: 142.59%
+}
+
+}
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    TABLET     */
+@media screen 
+and (min-width : 768px) 
+    and (max-width : 1024px)  {
+    
+    
+    
+    .lander_img_desktop {
+        display: none;
+    
+    }
+    
+    .lander_img_tablet {
+        display: block;
+    }
+        
+        #clock {
+            width: 100%;
+            font-size: 3rem;
+        }
+        
+        .razor_logo {
+            width: 13%;
+            bottom: 5.5%;
+        }
+        
+        .txst_logo {
+            width: 13%;
+            bottom: 4%;
+        }   
+        
+        .dots {
+            margin-top: 25rem;
+            
+        }
+    
+    
+    
+    
+    
+    
+    
+    }
+
+
+
+
+
+
+
+/*    DESKTOP     */
+
+@media screen and (min-width: 1024px) and (max-width: 2600px) {
+
+    .splash_img_tablet {
+        display: none;
+    }
+
+
+}
+
+
+@-webkit-keyframes scroll_button {
+  0%   { opacity: 0; }
+  50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes scroll_button {
+  0%   { opacity: 0; }
+  50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes scroll_button {
+  0%   { opacity: 0; }
+  50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes scroll_button {
+  0%   { opacity: 0; }
+  50% { opacity: 1; }
+    100% { opacity: 0; }
 }
