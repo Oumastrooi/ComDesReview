@@ -1,69 +1,150 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+
 /* End of Meyer Reset CSS */
 
 img {
-	max-width: 100%; /*makes images scale with flexible grids*/
-	display: block; /*removes tiny space added in some browsers below images */
+    max-width: 100%;
+    /*makes images scale with flexible grids*/
+    display: block;
+    /*removes tiny space added in some browsers below images */
 }
 
 html {
-    font-size:12pt; /* Adjust for REM */
-	line-height: 1;
+    font-size: 12pt;
+    /* Adjust for REM */
+    line-height: 1;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*  CSS STARTS HERE    */
-
 
 * {
     box-sizing: border-box;
@@ -74,6 +155,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+h3 {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+a {
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 h4 {
@@ -91,10 +195,6 @@ h4 {
     padding: 0rem;
 }
 
-section {
-    
-}
-
 .student {
     position: relative;
     width: 20%;
@@ -103,18 +203,66 @@ section {
     margin-bottom: 1rem;
 }
 
+.headshot {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.overlay.red {
+    background-color: rgba(236, 94, 94, .45);
+}
+
+.overlay.yellow {
+    background-color: rgba(255, 195, 77, .45);
+}
+
+.overlay.blue {
+    background-color: rgba(0, 157, 157, .45);
+}
+
+.student:hover .overlay {
+    height: 100%
+}
+
+.studen:active .overlay {
+    height: 100%;
+}
+
+.slide-up {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .grid_whole {
-    
     overflow: hidden;
     clear: both;
 }
 
-
-
+.tag {
+    padding: .3em .3em .3em .3em;
+}
 
 
 /* ----------- LANDING PAGE -------------*/
-
 
 .landing_header {
     width: 100%;
@@ -123,32 +271,27 @@ section {
     position: fixed;
 }
 
-.landing_header p{
-    
+.landing_header p {
     color: #DBDCDD;
-    font-family: 'usual' , sans-serif;
+    font-family: 'usual', sans-serif;
     width: 99%;
     font-size: 1.4rem;
     margin-left: 1.5%
 }
 
-.landing_header h1{
-    
+.landing_header h1 {
     color: #DBDCDD;
-    font-family: 'usual' , sans-serif;
+    font-family: 'usual', sans-serif;
     width: 99%;
     font-size: 1rem;
     margin-left: 1.5%
 }
 
-
 .header_lockup {
-    
     position: absolute;
     width: 45%;
     margin-top: 2%;
     margin-left: 2%;
-
 }
 
 .bd_logo {
@@ -168,8 +311,6 @@ section {
     position: absolute;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
-        
-    
 }
 
 .dots {
@@ -197,12 +338,10 @@ section {
 }
 
 .logo_lockup {
-    
     position: absolute;
     margin-left: 30.4%;
     margin-top: 17%;
     width: 55%;
-
 }
 
 .razor_logo {
@@ -219,44 +358,35 @@ section {
     right: 40%;
 }
 
-
-
 .process {
     animation-delay: .3s;
     animation-timing-function: ease-out;
 }
 
 .event_details {
-    
     animation-delay: .5s;
     animation-timing-function: ease-out;
-
 }
 
 
 /* --------- PORTFOLIO SECTION -------*/
 
 #filtered-portfolio {
-    
     background-color: #FFC34D;
     padding-top: 3rem;
     padding-bottom: 13rem;
     margin-top: 100vh;
     position: absolute;
     width: 100%;
-
 }
 
 #filtered-portfolio h4 {
     margin-bottom: 2rem;
 }
 
-.js-radio-button {
-
-}
+.js-radio-button {}
 
 .view_portfolio_link {
-    
     position: fixed;
     width: 14rem;
     border-top-left-radius: 20px;
@@ -270,14 +400,14 @@ section {
     bottom: 0;
 }
 
-.view_portfolio_link p{
+.view_portfolio_link p {
     font-size: .8rem;
     color: #0A2436;
     font-family: 'usual', sans-serif;
     font-weight: 600;
     text-align: left;
     line-height: .9rem;
-    width: 75%; 
+    width: 75%;
     clear: both;
     display: inline-block;
     float: left;
@@ -289,17 +419,16 @@ section {
     text-decoration: none;
 }
 
-.view_portfolio_link a:hover{
+.view_portfolio_link a:hover {
     text-decoration: none;
-
 }
 
-
 #portfolio_anchor {
-position: absolute;
+    position: absolute;
     width: 25%;
     margin-top: 57.59%
 }
+
 
 /*  --------- ARROW BOUNCE --------- */
 
@@ -309,98 +438,49 @@ position: absolute;
     margin-right: .5rem;
 }
 
-
-
-
 .scroll_arrows {
-    
     width: 73%!important;
     margin: 0rem auto 0rem;
     padding-top: 0rem;
-    float: right
-    -webkit-animation: scroll_button 2s infinite; /* Safari 4+ */
-    -moz-animation:    scroll_button 2s infinite; /* Fx 5+ */
-    -o-animation:      scroll_button 2s infinite; /* Opera 12+ */
-    animation:         scroll_button 2s infinite; /* IE 10+, Fx 29+ */
-    
-   
-    
-   
-    
+    float: right -webkit-animation: scroll_button 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: scroll_button 2s infinite;
+    /* Fx 5+ */
+    -o-animation: scroll_button 2s infinite;
+    /* Opera 12+ */
+    animation: scroll_button 2s infinite;
+    /* IE 10+, Fx 29+ */
 }
-    
-    .scroll_arrows_2 {
-    
+
+.scroll_arrows_2 {
     width: 73%!important;
     margin: -.3rem auto 0rem;
     padding-top: 0rem;
-    -webkit-animation: scroll_button 2s infinite; /* Safari 4+ */
-    -moz-animation:    scroll_button 2s infinite; /* Fx 5+ */
-    -o-animation:      scroll_button 2s infinite; /* Opera 12+ */
-    animation:         scroll_button 2s infinite; /* IE 10+, Fx 29+ */
-        animation-timing-function:ease-in-out;
-       
-   
-    
+    -webkit-animation: scroll_button 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: scroll_button 2s infinite;
+    /* Fx 5+ */
+    -o-animation: scroll_button 2s infinite;
+    /* Opera 12+ */
+    animation: scroll_button 2s infinite;
+    /* IE 10+, Fx 29+ */
+    animation-timing-function: ease-in-out;
 }
-    
-    .scroll_arrows_3 {
-    
+
+.scroll_arrows_3 {
     width: 73%!important;
     margin: -.3rem auto 0rem;
     padding-top: 0rem;
-    -webkit-animation: scroll_button 2s infinite; /* Safari 4+ */
-    -moz-animation:    scroll_button 2s infinite; /* Fx 5+ */
-    -o-animation:      scroll_button 2s infinite; /* Opera 12+ */
-    animation:         scroll_button 2s infinite; /* IE 10+, Fx 29+ */
-   animation-timing-function:ease-in;
-    
+    -webkit-animation: scroll_button 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: scroll_button 2s infinite;
+    /* Fx 5+ */
+    -o-animation: scroll_button 2s infinite;
+    /* Opera 12+ */
+    animation: scroll_button 2s infinite;
+    /* IE 10+, Fx 29+ */
+    animation-timing-function: ease-in;
 }
-
-
-#albeK {
-    
-    width: 20%;
-    position: relative;
-    background-image: url('../img/headshots/albeK.bw.jpg');
-        
-    
-    
-   
-    
-    
-}
-
-
-#albeK img {
-   background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(255, 0, 0, 0.45), 
-      rgba(255, 0, 0, 0.45)
-    );
-    
-}
-
-#overlay    {
-
-    position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(236,94,94, .85);
-}
-
-#albeK:hover #overlay {
-  opacity: 1;
-}
-
-
 
 
 /* ---- button ---- */
@@ -467,7 +547,6 @@ position: absolute;
 #branding {
     background-image: url(../img/Portfolio-Icons/Branding_Light.png);
     transition: background-image .6s ease-in-out;
-    
 }
 
 #branding:hover {
@@ -502,7 +581,6 @@ position: absolute;
 
 #illustration.is-checked {
     background-image: url(../img/Portfolio-Icons/Illustration_Dark.png);
-    
 }
 
 #typography {
@@ -626,9 +704,14 @@ position: absolute;
 /* ---- isotope ---- */
 
 .grid {
-    background: #EEE;
+    background: #0A2436;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 
@@ -641,223 +724,161 @@ position: absolute;
 }
 
 
-/*students*/
-
-#houserA {
-    background-image: url(../img/headshots/hauserA.bw.jpg);
-}
-
-
-/* delete this when students are ready */
-
-
-
-
-
-
-
 /* MEDIA QUERIES START HERE  */
-
-
-
-
-
 
 
 /*    MOBILE     */
 
-@media screen and (max-width : 767px) {
-    
-    
+@media screen and (max-width: 767px) {
     .splash_img_desktop {
         display: none;
-    
     }
-    
     .lander_img_tablet {
         display: none;
     }
-    
     .lander_info_lockup {
         position: absolute;
         width: 100%;
         top: 15%;
         right: 13%;
     }
-    
     .header_lockup {
         width: 85%;
         margin-top: 4%;
         margin-left: 4%;
     }
-    
     .bd_logo {
         width: 8%
     }
-    
     .header_type {
         width: 100%!important;
         font-size: .9rem!important;
     }
-    
     .logo_lockup {
         width: 75%!important;
     }
-    
     .logo_lockup h1 {
         width: 100%!important;
         font-size: .8rem;
     }
-    
-   
-    
     .dots {
         margin-top: 1.7rem;
         right: -31.3%!important;
-        
         z-index: ;
     }
-        
-        .razor_logo {
-            width: 23%;
-            bottom: 5.5%;
-            left: 13%
-        }
-        
-        .txst_logo {
-            width: 23%;
-            bottom: 4%;
-            right: 16%;
-        }
-    
+    .razor_logo {
+        width: 23%;
+        bottom: 5.5%;
+        left: 13%
+    }
+    .txst_logo {
+        width: 23%;
+        bottom: 4%;
+        right: 16%;
+    }
     .js-radio-button {
         width: 95%!important;
         margin: 0 auto;
     }
-    
-    
-        
-        .first-row {
-    width: 100%;
-    margin: 0px auto;
-}
-    
-     .two-row {
-    width: 100%;
-    margin: 0px auto;
-
-}
-    
+    .first-row {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .two-row {
+        width: 100%;
+        margin: 0px auto;
+    }
     .three-row {
-    width: 100%;
-    margin: 0px auto;
-    
-}
-    
-    
-    
+        width: 100%;
+        margin: 0px auto;
+    }
     #portfolio_anchor {
-position: absolute;
-    width: 25%;
-    margin-top: 175%
+        position: absolute;
+        width: 25%;
+        margin-top: 175%
+    }
 }
-
-}
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*    TABLET     */
-@media screen 
-and (min-width : 768px) 
-    and (max-width : 1024px)  {
-    
-    
-    
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .lander_img_desktop {
         display: none;
-    
     }
-    
     .lander_img_tablet {
         display: block;
     }
-        
-        #clock {
-            width: 100%;
-            font-size: 3rem;
-        }
-        
-        .razor_logo {
-            width: 13%;
-            bottom: 5.5%;
-        }
-        
-        .txst_logo {
-            width: 13%;
-            bottom: 4%;
-        }   
-        
-        .dots {
-            margin-top: 25rem;
-            
-        }
-    
-    
-    
-    
-    
-    
-    
+    #clock {
+        width: 100%;
+        font-size: 3rem;
     }
-
-
-
-
-
+    .razor_logo {
+        width: 13%;
+        bottom: 5.5%;
+    }
+    .txst_logo {
+        width: 13%;
+        bottom: 4%;
+    }
+    .dots {
+        margin-top: 25rem;
+    }
+}
 
 
 /*    DESKTOP     */
 
 @media screen and (min-width: 1024px) and (max-width: 2600px) {
-
     .splash_img_tablet {
         display: none;
     }
-
-
 }
-
 
 @-webkit-keyframes scroll_button {
-  0%   { opacity: 0; }
-  50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 @-moz-keyframes scroll_button {
-  0%   { opacity: 0; }
-  50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 @-o-keyframes scroll_button {
-  0%   { opacity: 0; }
-  50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 @keyframes scroll_button {
-  0%   { opacity: 0; }
-  50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
