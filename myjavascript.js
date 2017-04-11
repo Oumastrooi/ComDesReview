@@ -43,3 +43,8 @@ function removeFilter(filter) {
         numFilters = numFilters - 1;
     }
 }
+
+$( document ).ready(function() {
+  var PageLoadFilter = '.initially-hidden';
+  $container.isotope({ filter: PageLoadFilter});
+});

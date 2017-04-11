@@ -95,6 +95,22 @@ section {
     
 }
 
+.student {
+    position: relative;
+    width: 20%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid_whole {
+    
+    overflow: hidden;
+    clear: both;
+}
+
+
+
 
 
 /* ----------- LANDING PAGE -------------*/
@@ -224,7 +240,7 @@ section {
     
     background-color: #FFC34D;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 13rem;
     margin-top: 100vh;
     position: absolute;
     width: 100%;
@@ -342,11 +358,56 @@ position: absolute;
 }
 
 
+#albeK {
+    
+    width: 20%;
+    position: relative;
+    background-image: url('../img/headshots/albeK.bw.jpg');
+        
+    
+    
+   
+    
+    
+}
+
+
+#albeK img {
+   background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    );
+    
+}
+
+#overlay    {
+
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(236,94,94, .85);
+}
+
+#albeK:hover #overlay {
+  opacity: 1;
+}
+
+
+
 
 /* ---- button ---- */
 
 .button {
     display: inline-block;
+    float: left;
     padding-top: .9rem;
     padding-bottom: .9rem;
     background: #0A2335;
@@ -566,9 +627,8 @@ position: absolute;
 
 .grid {
     background: #EEE;
-    max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 
@@ -591,44 +651,6 @@ position: absolute;
 /* delete this when students are ready */
 
 
-/* color-shape */
-
-.color-shape {
-    width: 70px;
-    height: 70px;
-    margin: 5px;
-    float: left;
-}
-
-.color-shape.round {
-    border-radius: 35px;
-}
-
-.color-shape.big.round {
-    border-radius: 75px;
-}
-
-.color-shape.red {
-    background: red;
-}
-
-.color-shape.blue {
-    background: blue;
-}
-
-.color-shape.yellow {
-    background: yellow;
-}
-
-.color-shape.wide,
-.color-shape.big {
-    width: 150px;
-}
-
-.color-shape.tall,
-.color-shape.big {
-    height: 150px;
-}
 
 
 
@@ -737,7 +759,7 @@ position: absolute;
     #portfolio_anchor {
 position: absolute;
     width: 25%;
-    margin-top: 142.59%
+    margin-top: 175%
 }
 
 }
