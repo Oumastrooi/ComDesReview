@@ -196,7 +196,7 @@ html {
     margin-left: 3%!important;
     width: 56%!important;
     margin-top: 2%;
-    position: absolute;
+    position: relative;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
 }
@@ -208,9 +208,8 @@ html {
 }
 
 .icon_lockup {
-    position: absolute;
-    z-index: 100000;
-    margin-top: 15%;
+    position: relative;
+    margin-top: 3em;
     width: 100%;
     animation-delay: .9s;
     animation-timing-function: ease-out;
@@ -227,7 +226,7 @@ html {
 }
 
 .clock_lockup {
-    position: absolute;
+    position: relative;
     z-index: 100000;
     margin-top: 5.2%;
     width: 100%;
@@ -338,7 +337,6 @@ html {
     .dots {
         margin-top: 1.15rem;
         right: -31.3%!important;
-        z-index: ;
     }
     .razor_logo {
         width: 23%;
@@ -351,7 +349,7 @@ html {
         right: 16%;
     }
     .icon_lockup {
-        margin-top: 45%;
+        margin-top: 1.5em;
         z-index: 100000;
     }
 }
@@ -386,7 +384,7 @@ html {
         right: -31.3%!important;
     }
     .icon_lockup {
-        margin-top: 45%;
+        margin-top: 3em;
         z-index: 100000;
     }
 }
