@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!--Don't forget to fill these out!-->
+    <title>Behind The Design</title>
+    <meta name="description" content="Description for site goes here." />
+
+    <!--Links to the main Style Sheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+    <script src="js/modernizr.js"></script>
+
+    <!--Makes the site so it won't scale down on small devices -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="jquery.countdown.js"></script>
+
+    <script src="wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="animate.css">
+
+    <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+
+    <link rel="stylesheet" href="bootstrap-theme.min.css" />
+
+    <link href="hover-min.css" rel="stylesheet">
+
+    <link href="hamburgers.css" rel="stylesheet">
+
+    <script src="https://use.typekit.net/ohk7emu.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <section class="splash_header">
+
+
+
+
+        <div class="header_lockup">
+
+            <img class="bd_logo animated fadeInLeft" src="images/bd_logo_white.png" />
+
+            <p class="header_type animated fadeInRight">Texas State ComDes Exit Review</p>
+
+        </div>
+
+
+
+
+        <div class="splash_info_lockup">
+
+            <div class="logo_lockup">
+
+
+                <img class="bd_logo_type  animated fadeInUp" src="images/behind_the_design_logo_type.png" />
+
+                <p class="process animated fadeInUp">Be a part of the process.</p>
+                <br>
+                <h1 class="event_details animated fadeInUp">May 4th &nbsp | &nbsp 6 &#8211 8:30pm &nbsp | &nbsp 300 W 6th St. Suite #1600 </h1>
+
+                <div class="clock_lockup  animated fadeInUp">
+
+                    <p>Portfolios go live in:</p>
+
+                    <span id="clock"></span>
+                </div>
+
+                <div class="icon_lockup animated fadeInUp">
+
+                    <a href="https://www.facebook.com/txstate.comdesreview">
+                        <i class="fa fa-facebook-square fa-3x fa-fw" style="color: white;"></i>
+                    </a>
+                    <a href="https://twitter.com/ComDesReview">
+                        <i class="fa fa-twitter-square fa-3x fa-fw" style="color: white;"></i>
+                    </a>
+                    <a href="http://instagram.com/comdesreview">
+                        <i class="fa fa-instagram fa-3x fa-fw" style="color: white;">
+                            </i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <img class="dots" src="images/dots.png" />
+
+        <img class="razor_logo" src="images/razorfish_logo.png" />
+
+        <img class="txst_logo" src="images/texas_state_logo.png" />
+
+
+        <div class="color1"></div>
+        <div class="color2"></div>
+
+
+
+
+        <!-----
+        
+        <img class="splash_img_desktop" src="images/splash_page.jpg"/>
+            
+            <img class="splash_img_tablet" src="images/splash_img_tablet.jpg"/>
+--------->
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $('#clock').countdown('2017/04/28', function(event) {
+            $(this).html(event.strftime('%D days %H:%M:%S'));
+        });
+    </script>
+
+
+</body>
+
+</html>
