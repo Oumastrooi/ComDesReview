@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+html {
+    font-size:12pt; /* Adjust for REM */
+	line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES START HERE  */
+
+
+
+
+
+
+
+/*    MOBILE     */
+
+@media screen and (max-width : 767px) {
+    
+    
+    .splash_img_desktop {
+        display: none;
+    
+    }
+    
+    .splash_img_tablet {
+        display: none;
+    }
+    
+    .splash_info_lockup {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        right: 13%;
+    }
+    
+    .header_lockup {
+        width: 85%;
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    
+    .bd_logo {
+        width: 8%
+    }
+    
+    .bd_logo_type {
+        width: 84%;
+    }
+    
+    .header_type {
+        width: 100%!important;
+        font-size: .9rem!important;
+    }
+    
+    .logo_lockup {
+        width: 85%!important;
+        margin-left: 23%;
+        margin-top: 1.3rem;
+    }
+    
+    .logo_lockup h1 {
+        width: 100%!important;
+        font-size: .8rem;
+    }
+    
+    #clock {
+            width: 100%;
+            font-size: 1.6rem;
+        margin-left: -.1rem;
+        }
+    
+    .clock_lockup {
+        margin-top: 3rem;
+    }
+    
+    .dots {
+        margin-top:5.9rem;
+        right: -31.3%!important;
+        width:100%;
+        
+        z-index: ;
+    }
+        
+        .razor_logo {
+            width: 23%;
+            bottom: 4%;
+            left: 13%
+        }
+        
+        .txst_logo {
+            width: 30%;
+            bottom: 4%;
+            right: 16%;
+        }
+    
+    .icon_lockup {
+        margin-top: 1rem;
+        width: 65%;
+        margin-left: -.5rem;
+    }
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*    TABLET     */
+@media screen 
+and (min-width : 768px) 
+    and (max-width : 1024px)  {
+    
+    
+    
+    .splash_img_desktop {
+        display: none;
+    
+    }
+        .header_lockup {
+            width: 60%;
+        }
+    
+    .splash_img_tablet {
+        display: block;
+    }
+        
+        #clock {
+            width: 100%;
+            font-size: 3rem;
+            margin-left: -.1rem;
+        }
+        
+        .razor_logo {
+            width: 13%;
+            bottom: 5.5%;
+        }
+        
+        .txst_logo {
+            width: 13%;
+            bottom: 5%;
+        }   
+        
+        .dots {
+            margin-top: 25rem;
+            -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+            
+        }
+        
+        
+        
+        .icon_lockup {
+        margin-top: 1rem;
+        width: 65%;
+        margin-left: -.5rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
+
+
+
+
+
+
+/*    DESKTOP     */
+
+@media screen and (min-width: 1024px) and (max-width: 2600px) {
+
+    .splash_img_tablet {
+        display: none;
+    }
+    
+    .icon_lockup {
+        margin-top: 1rem;
+        width: 65%;
+        margin-left: -.5rem;
+    }
+    
+    #clock {
+        margin-left: -.2rem;
+        width: 25%;
+        font-size: 2.5rem;
+    }
+    
+    .logo_lockup {
+        margin-top: 10rem;
+        width: 55%;
+    }
+    
+     .dots {
+            margin-top: 25rem;
+            -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+            
+        }
+    
+    .txst_logo {
+            width: 10%;
+            bottom: 4%;
+            right: 40%;
+        }
+    .bd_logo_type {
+        width: 45%;
+    }
+
+
+}
+
+
+
+
+       

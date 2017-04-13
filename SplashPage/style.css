@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+html {
+    font-size:12pt; /* Adjust for REM */
+	line-height: 1;
+}
+
+
+
+
+
+
+
+/*        CSS STARTS HERE       */
+
+
+.lander_header {
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+}
+
+.lander_header p{
+    
+    color: #DBDCDD;
+    font-family: 'usual' , sans-serif;
+    width: 99%;
+    font-size: 1.4rem;
+    margin-left: 1.5%
+}
+
+.lander_header h1{
+    
+    color: #DBDCDD;
+    font-family: 'usual' , sans-serif;
+    width: 99%;
+    font-size: 1rem;
+    margin-left: 1.5%
+}
+
+
+.header_lockup {
+    
+    position: absolute;
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+.bd_logo {
+    float: left;
+    display: inline-block;
+    width: 6%;
+}
+
+.header_type {
+    font-size: 1rem!important;
+    font-family: 'usual', sans-serif;
+    float: left;
+    display: inline-block;
+    color: #DBDCDD;
+    margin-left: 3%!important;
+    width: 56%!important;
+    margin-top: 2%;
+    position: absolute;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+        
+    
+}
+
+.dots {
+    position: absolute;
+    right: 0;
+    top: 2.3%;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    
+}
+
+
+#clock {
+    
+    
+    z-index: 100000;
+    
+    width: 100%;
+    color:#DBDCDD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 1%;
+    text-transform: capitalize;
+    
+
+
+}
+
+.clock_lockup {  
+    position: absolute;
+    z-index: 100000;
+    margin-top: 5.2%;
+    width: 100%;
+    animation-delay: .9s;
+    animation-timing-function: ease-out;
+    
+    
+
+
+}
+
+.clock_lockup p{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'usual',sans-serif;
+    color: #DBDCDD;
+    line-height: 2rem;
+    
+
+}
+
+.color1 {
+    width: 45%;
+    background-color: #0A2436;
+    height: 100vh;
+    float: left;
+    display: inline-block;
+    z-index: -99;
+}
+
+.color2 {
+    width: 55%;
+    background-color: #009D9D;
+    height: 100vh;
+    float: right;
+    display: inline-block;
+    z-index: -99;
+}
+
+.logo_lockup {
+    
+    position: absolute;
+    margin-left: 26.4%;
+    margin-top: 17%;
+    width: 55%
+
+}
+
+.razor_logo {
+    position: absolute;
+    bottom: 4%;
+    width: 10%;
+    left: 30%;
+}
+
+.txst_logo {
+    position: absolute;
+    bottom: 2%;
+    width: 10%;
+    right: 40%;
+}
+
+
+
+.process {
+    animation-delay: .3s;
+    animation-timing-function: ease-out;
+    font-family: 'usual',sans-serif;
+    color: #DBDCDD;
+}
+
+.event_details {
+    
+    animation-delay: .5s;
+    animation-timing-function: ease-out;
+    font-family: 'usual',sans-serif;
+    color: #DBDCDD;
+    
+
+}
+
+.icon_lockup a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+       
