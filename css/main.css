@@ -85,6 +85,7 @@ video {
     border: 0;
     font: inherit;
     vertical-align: baseline;
+    text-decoration: none;
 }
 
 
@@ -160,24 +161,39 @@ body {
 h3 {
     text-align: center;
     line-height: 2em;
-    font-size: 1em;
+    font-size: .7em;
+    white-space: nowrap;
 }
 
 a {
     text-align: center;
-    line-height: 1.2em;
-    font-size: 1em;
+    line-height: 1.7em;
+    font-size: 1.5em;
     color: white;
 }
 
-a:hover {
+a:link,
+a:active,
+a:hover,
+a:focus {
     text-decoration: none;
     color: white;
 }
 
-a:visited {
+.austin a:visited h3 {
     text-decoration: none;
-    color: white;
+    color: #Ec5E5e;
+}
+
+.lbj a:visited h3 {
+    text-decoration: none;
+    color: #FFC34D;
+    ;
+}
+
+.barton a:visited h3 {
+    text-decoration: none;
+    color: #009D9D;
 }
 
 h4 {
@@ -201,6 +217,7 @@ h4 {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    max-width: 200px;
 }
 
 .headshot {
@@ -220,15 +237,15 @@ h4 {
     transition: .5s ease;
 }
 
-.overlay.red {
+.austin .overlay {
     background-color: rgba(236, 94, 94, .45);
 }
 
-.overlay.yellow {
+.lbj .overlay {
     background-color: rgba(255, 195, 77, .45);
 }
 
-.overlay.blue {
+.barton .overlay {
     background-color: rgba(0, 157, 157, .45);
 }
 
@@ -236,8 +253,9 @@ h4 {
     height: 100%
 }
 
-.studen:active .overlay {
+.student:active .overlay {
     height: 100%;
+    text-decoration: none;
 }
 
 .slide-up {
@@ -250,11 +268,6 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-.grid_whole {
-    overflow: hidden;
-    clear: both;
 }
 
 .tag {
@@ -712,6 +725,7 @@ h4 {
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+    width: 70%;
 }
 
 
