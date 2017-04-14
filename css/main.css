@@ -510,9 +510,11 @@ h4 {
     color: white;
     font-size: 1em;
     cursor: pointer;
-    padding-left: 3rem;
+    padding-left: 3.5rem;
+    padding-right: 1em;
     border: 3px solid #0A2335;
     margin: .25em .25em .25em .25em;
+    background-position: 8px center ;
 }
 
 .button:hover {
@@ -529,6 +531,22 @@ h4 {
 .button.is-checked {
     color: white;
     color: #0A2335;
+    position: relative;
+}
+
+.button.is-checked:before {
+    content: "x";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    background: #0A2436;
+    z-index: 2000;
+    font-size: 9px;
+    line-height: 5px;
+    padding: 4px 3px 5px 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .button:active {
@@ -536,17 +554,17 @@ h4 {
 }
 
 .first-row {
-    width: 670px;
+    width: 705px;
     margin: 0px auto;
 }
 
 .two-row {
-    width: 640px;
+    width: 675px;
     margin: 0px auto;
 }
 
 .three-row {
-    width: 745px;
+    width: 778px;
     margin: 0px auto;
 }
 
