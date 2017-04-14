@@ -803,6 +803,7 @@ h4 {
     .bd_logo {
         width: 8%
     }
+
     .header_type {
         width: 100%!important;
         font-size: .9rem!important;
@@ -850,6 +851,55 @@ h4 {
         width: 25%;
         margin-top: 175%
     }
+    
+    .student_div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+    
+ 
+    .grid {
+    padding: 0em;
+    width: 100%;
+}
+    
+    h3 {
+    font-size: 0.6em;
+    }
+    
+    .button {
+        font-size: 0.9em;
+    }
+    
+    .student {
+        width: 30%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+    
+    .student:nth-child(3n) {
+        margin-right: 0%;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+   
+    .student {
+        width: 47%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+    
+    .student:nth-child(2n) {
+        margin-right: 0%;
+        
+    }
+    
+    
 }
 
 
