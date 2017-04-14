@@ -8,6 +8,8 @@ var $grid = $('.grid').isotope({
 // store filter for each group
 var filters = [];
 var numFilters = 0;
+var iso = $grid.data('isotope');
+var $filterCount = $('.filter-count');
 
 // change is-checked class on buttons
 $('.filters').on('click', 'button', function(event) {
@@ -25,7 +27,17 @@ $('.filters').on('click', 'button', function(event) {
     // filter isotope
     // group filters together, inclusive
     $grid.isotope({ filter: filters.join(',') });
+    updateFilterCount();
+
 });
+
+function updateFilterCount() {
+    $filterCount.text('Showing ' + iso.filteredItems.length + ' of 48 Designers');
+}
+
+updateFilterCount();
+
+
 
 function addFilter(filter) {
     if (numFilters < 3) {
@@ -44,7 +56,7 @@ function removeFilter(filter) {
     }
 }
 
-$( document ).ready(function() {
-  var PageLoadFilter = '.initially-hidden';
-  $container.isotope({ filter: PageLoadFilter});
+$(document).ready(function() {
+    var PageLoadFilter = '.initially-hidden';
+    $container.isotope({ filter: PageLoadFilter });
 });
