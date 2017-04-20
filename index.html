@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hover-min.css">
 
@@ -46,66 +46,32 @@
 </head>
 
 
-    
-    <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  
-
-
+<body>
 
     <header class="container-fluid">
-
         <section class="landing_header">
-
-
-
-
             <div class="header_lockup">
-
                 <img class="bd_logo animated fadeInLeft" src="img/bd_logo_white.png" />
-
                 <p class="header_type animated fadeInRight">Texas State ComDes Exit Review</p>
-
             </div>
-
-
-
-
             <div class="lander_info_lockup">
-
                 <div class="logo_lockup">
-
-
                     <img class="bd_logo_type  animated fadeInUp" src="img/behind_the_design_logo_type.png" />
-
                     <p class="process animated fadeInUp">Be a part of the process.</p>
                     <br>
-                    <h1 class="event_details animated fadeInUp">May 4th &nbsp | &nbsp 6-8:30pm &nbsp | &nbsp 300 W 6th St. #1600 </h1>
-
-
-
-
-
+                    <a href="https://goo.gl/maps/bmYGgswtC8H2">
+                        <h1 class="event_details animated fadeInUp">May 4th &nbsp | &nbsp 6 &ndash; 8:30pm &nbsp <br>300 W 6th St. Suite #1600, Austin, TX </h1>
+                    </a>
                 </div>
-
                 <button class="view_portfolio_link wow fadeInUp" style="animation-delay: .5s;">
                     <a href="#portfolio_anchor">
-                        
                         <p>BROWSE PORTFOLIOS<br></p>
-                        
-                        <div class="scroll_arrow_div">
-                            
+                        <div class="scroll_arrow_div">  
                             <img class="scroll_arrows" src="img/arrow.png"/>
-                       
-                            
-                            
                         </div>
                     </a>
                 </button>
-
 
             </div>
 
@@ -123,77 +89,64 @@
         <img class="splash_img_desktop" src="images/splash_page.jpg"/>
          <img class="splash_img_tablet" src="images/splash_img_tablet.jpg"/> -->
 
-
-
-
-
-
-
-
         </section>
-        
-        </div>
+
+
 
     </header>
 
     <a id="portfolio_anchor"></a>
 
-    <section id="filtered-portfolio" class="container-fluid centered">
+    <section id="filtered-portfolio">
+        <h4>I'm looking for someone skilled in... (choose 3)</h4>
         
-        <div class="button_div">
 
-        <div class="row centered">
-
-            <h4>I'm looking for someone skilled in... (choose 3)</h4>
-        </div>
-
-        <div class="row centered">
-
-            <div class="col-sm-offset-2 col-sm-8 filters">
+        <div class="col-sm-offset-2 col-sm-8 filters">
 
 
-                <div class="ui-group">
+            <div class="ui-group">
 
 
-                    <div class="js-radio-button">
-                        <div class="row first-row">
-                            <button class="button  wow fadeInRight" id="branding" data-filter=".branding">Branding</button>
-                            <button class="button wow fadeInRight" id="responsive" data-filter=".responsive" style="animation-delay: .01s;">Responsive Design</button>
-                            <button class="button wow fadeInRight" id="illustration" data-filter=".illustration" style="animation-delay: .02s;">Illustration</button>
-                            <button class="button wow fadeInRight" id="typography" data-filter=".typography" style="animation-delay: .03s;">Typography</button>
-                        </div>
-                        <div class="row two-row">
-                            <button class="button wow fadeInRight" id="advertising" data-filter=".advertising" style="animation-delay: .04s;">Advertising</button>
-                            <button class="button wow fadeInRight" id="video" data-filter=".video" style="animation-delay: .05s;">Video</button>
-                            <button class="button wow fadeInRight" id="packaging" data-filter=".packaging" style="animation-delay: .06s;">Package Design</button>
-                            <button class="button wow fadeInRight" id="photography" data-filter=".photography" style="animation-delay: .07s;">Photography</button>
-                        </div>
-                        <div class="row three-row">
-                            <button class="button wow fadeInRight" id="product" data-filter=".product" style="animation-delay: .08s;">Product Design</button>
-                            <button class="button wow fadeInRight" id="editorial" data-filter=".editorial" style="animation-delay: .09s;">Editorial Design</button>
-                            <button class="button wow fadeInRight" id="frontend" data-filter=".frontend" style="animation-delay: .1s;">Front End Development</button>
-                            <button class="button wow fadeInRight" id="UXUI" data-filter=".UXUI" style="animation-delay: .16s;">UX|UI</button>
-                        </div>
-
+                <div class="js-radio-button">
+                    <div class="row first-row">
+                        <button class="button  wow fadeInRight" id="branding" data-filter=".branding">Branding</button>
+                        <button class="button wow fadeInRight" id="responsive" data-filter=".responsive" style="animation-delay: .01s;">Responsive Design</button>
+                        <button class="button wow fadeInRight" id="illustration" data-filter=".illustration" style="animation-delay: .02s;">Illustration</button>
+                        <button class="button wow fadeInRight" id="typography" data-filter=".typography" style="animation-delay: .03s;">Typography</button>
+                    </div>
+                    <div class="row two-row">
+                        <button class="button wow fadeInRight" id="advertising" data-filter=".advertising" style="animation-delay: .04s;">Advertising</button>
+                        <button class="button wow fadeInRight" id="video" data-filter=".video" style="animation-delay: .05s;">Video</button>
+                        <button class="button wow fadeInRight" id="packaging" data-filter=".packaging" style="animation-delay: .06s;">Package Design</button>
+                        <button class="button wow fadeInRight" id="photography" data-filter=".photography" style="animation-delay: .07s;">Photography</button>
+                    </div>
+                    <div class="row three-row">
+                        <button class="button wow fadeInRight" id="product" data-filter=".product" style="animation-delay: .08s;">Product Design</button>
+                        <button class="button wow fadeInRight" id="editorial" data-filter=".editorial" style="animation-delay: .09s;">Editorial Design</button>
+                        <button class="button wow fadeInRight" id="frontend" data-filter=".frontend" style="animation-delay: .1s;">Front End Development</button>
+                        <button class="button wow fadeInRight" id="UXUI" data-filter=".UXUI" style="animation-delay: .16s;">UX|UI</button>
                     </div>
 
                 </div>
-
-                <h4 class="filter-count">
-                </h4>
+                
+                
 
             </div>
+
+            
 
         </div>
+        <div class="student_div">
             
-            </div>
-
-        
-
-            <div class="grid">
+            <img class="color_key" src="img/color_key.png"/>
+            
+            <h2 class="filter-count">
+            </h2>
+            
+            <div class="grid student_div">
 
                 <!--Row 1 -->
-
+                <div class="grid-sizer"></div>
                 <div class="barton student branding packaging product">
                     <a href="http://www.aisahouser.com" target="_blank">
                         <img src="img/headshots/houserA.bw.jpg" class="headshot" />
@@ -405,7 +358,7 @@
                             <img src="img/Portfolio-Icons/Branding_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/UXUI_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Packaging_Dark.png" class="tag" />
-                            <img src="img/Portfolio-Icons/Frontend_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/FrontEnd_Dark.png" class="tag" />
                         </div>
                         <h3>Cesar Najera Romero</h3>
                     </a>
@@ -446,7 +399,7 @@
                     <a href="http://www.elize.website" target="_blank">
                         <img src="img/headshots/geldenhuysE.bw.jpg" class="headshot" />
                         <div class="overlay">
-                            <img src="img/Portfolio-Icons/Frontend_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/FrontEnd_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/UXUI_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Product_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Responsive_Dark.png" class="tag" />
@@ -463,7 +416,7 @@
                             <img src="img/Portfolio-Icons/UXUI_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Typography_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Editorial_Dark.png" class="tag" />
-                            <img src="img/Portfolio-Icons/video_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/Video_Dark.png" class="tag" />
                         </div>
                         <h3>Danielle Green</h3>
                     </a>
@@ -698,7 +651,7 @@
                             <img src="img/Portfolio-Icons/Branding_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Advertising_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Packaging_Dark.png" class="tag" />
-                            <img src="img/Portfolio-Icons/Frontend_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/FrontEnd_Dark.png" class="tag" />
                         </div>
                         <h3>Karlyn Jones</h3>
                     </a>
@@ -721,13 +674,14 @@
 
                 <!--Row 10 -->
 
-                <div class="lbj student branding UXUI packaging">
+                <div class="lbj student branding UXUI packaging advertising">
                     <a href="http://www.mkaserdesigns.com" target="_blank">
                         <img src="img/headshots/kaserM.bw.jpg" class="headshot" />
                         <div class="overlay">
                             <img src="img/Portfolio-Icons/Branding_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/UXUI_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Packaging_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/Advertising_Dark.png" class="tag" />
                         </div>
                         <h3>Melissa Kaser</h3>
                     </a>
@@ -785,7 +739,7 @@
                             <img src="img/Portfolio-Icons/Branding_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/UXUI_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Photography_Dark.png" class="tag" />
-                            <img src="img/Portfolio-Icons/Frontend_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/FrontEnd_Dark.png" class="tag" />
                         </div>
                         <h3>Shawn Bienek</h3>
                     </a>
@@ -844,7 +798,7 @@
                             <img src="img/Portfolio-Icons/Branding_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/UXUI_Dark.png" class="tag" />
                             <img src="img/Portfolio-Icons/Responsive_Dark.png" class="tag" />
-                            <img src="img/Portfolio-Icons/Frontend_Dark.png" class="tag" />
+                            <img src="img/Portfolio-Icons/FrontEnd_Dark.png" class="tag" />
                         </div>
                         <h3>Victoria Salinas</h3>
                     </a>
@@ -891,19 +845,38 @@
                         <h3>Taylor Garcia</h3>
                     </a>
                 </div>
-            
+
+
+            </div>
+            <!--End of a student-->
 
         </div>
-        <!--End of a student-->
 
         <div class="map_desktop">
             <img src="img/map_desktop.jpg" />
         </div>
+        
+        <div class="map_mobile">
+            <img src="img/map_mobile.jpg"/>
+        </div>
 
-        <footer class="footer">
-            <ul>
-                <li><img src="img/razorfish_logo.png" /></li>
-            </ul>
+        <footer>
+            <div class="container centered">
+                <div class="row">
+                    <h4> Hosted by: </h4>
+                </div>
+                <div class="row">
+                    <img class="razor_logo1" src="img/SR_Logo.png" class="centered" alt="sapient razorfish logo" />
+                </div>
+
+                <div class="row">
+                    <h4> Special Thanks to our Platinum Sponsors: </h4>
+                </div>
+                <div class="row">
+                    <img class="tnt_logo" src="img/tnt_logo.png"/>
+
+                </div>
+            </div>
 
         </footer>
 
@@ -922,30 +895,30 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="js/isotope.min.js">
-    </script>
+    <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script src="myjavascript.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
-        
-        
-        
-        
-        
-        
-        
-        <script>
-var myVar;
 
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
 
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
+
+
+
+
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 
 
 

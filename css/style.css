@@ -212,12 +212,15 @@ h4 {
 }
 
 .student {
-    position: relative;
-    width: 20%;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
     max-width: 200px;
+}
+
+.student_div {
+    width: 100%;
+    background-color: #0A2436;
 }
 
 .headshot {
@@ -318,7 +321,7 @@ h4 {
     float: left;
     text-align: left;
     color: #DBDCDD;
-    margin-left: 8%!important;
+    margin-left: 11%!important;
     width: 56%!important;
     margin-top: 2%;
     position: absolute;
@@ -381,19 +384,17 @@ h4 {
     animation-delay: .5s;
     animation-timing-function: ease-out;
     text-align: left;
+    line-height: 1.5rem;
 }
 
-.button_div {
-    width: 100%;
-    background-color: #FFC34D;
-}
+
 
 
 /* --------- PORTFOLIO SECTION -------*/
 
 #filtered-portfolio {
-    background-color: #0A2436;
-    padding-top: 0rem;
+    background-color: #FFC34D;
+    padding-top: 4rem;
     padding-bottom: 0rem;
     margin-top: 100vh;
     position: absolute;
@@ -403,6 +404,10 @@ h4 {
 #filtered-portfolio h4 {
     margin-bottom: 2rem;
     padding-top: 2em;
+    font-family: 'usual',sans-serif;
+    font-weight: 600;
+    width: 75%;
+    line-height: 1.5rem;
 }
 
 .js-radio-button {}
@@ -432,7 +437,8 @@ h4 {
     clear: both;
     display: inline-block;
     float: left;
-    margin-top: .45rem;
+    margin-top: .35rem;
+    margin-bottom: .2rem;
     margin-left: .5rem;
 }
 
@@ -450,57 +456,80 @@ h4 {
     margin-top: 57.59%
 }
 
+
 /* ------------ PRE LOADER -----------*/
 
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+
 /* Add animation to "page content" */
+
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 #myDiv {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
 }
 
 
@@ -575,7 +604,7 @@ h4 {
     padding-right: 1em;
     border: 3px solid #0A2335;
     margin: .25em .25em .25em .25em;
-    background-position: 8px center ;
+    background-position: 8px center;
 }
 
 .button:hover {
@@ -797,23 +826,21 @@ h4 {
 
 .grid {
     background: #0A2436;
-    margin-left: auto;
+    margin-left: 11rem;
     margin-right: auto;
     margin-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     width: 80%;
 }
 
-.map_desktop img {
-    width: 100%;
+
+/* fluid 4 columns */
+
+.grid-sizer,
+.grid-item {
+    width: 25%;
 }
-
-
-
-
 
 
 /* clear fix */
@@ -824,7 +851,7 @@ h4 {
     clear: both;
 }
 
-.footer {
+footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: rgba(236, 94, 94, 1);
@@ -832,7 +859,19 @@ h4 {
     bottom: 0;
     z-index: 10000000!important;
     width: 100%;
-    
+}
+
+ul.footer-logo {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.filter-count{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: #DBDCDD;
+    margin-top: 1.5rem;
 }
 
 
@@ -842,12 +881,36 @@ h4 {
 /*    MOBILE     */
 
 @media screen and (max-width: 767px) {
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
     .splash_img_desktop {
         display: none;
     }
     .lander_img_tablet {
         display: none;
     }
+    .student_div {
+        padding-bottom: 5rem;
+    }
+    
+    .student{
+        width: 43%!important;
+    }
+    
+    .grid {
+        margin: 0 auto;
+        margin-left: 8.2%;
+        padding-left: 0rem;
+        top: 3rem;
+        width: 90%!important;
+    }
+    
+    .map_desktop {
+        display: none;
+    }
+    
     .lander_info_lockup {
         position: absolute;
         width: 100%;
@@ -862,7 +925,6 @@ h4 {
     .bd_logo {
         width: 8%
     }
-
     .header_type {
         width: 100%!important;
         font-size: .9rem!important;
@@ -910,61 +972,69 @@ h4 {
         width: 25%;
         margin-top: 175%
     }
-    
-    .student_div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    
-}
-    
- 
     .grid {
-    padding: 0em;
-    width: 100%;
-}
-    
-    h3 {
-    font-size: 0.6em;
+        padding: 0em;
+        width: 100%;
     }
-    
+    h3 {
+        font-size: 0.6em;
+    }
     .button {
         font-size: 0.9em;
     }
-    
     .student {
         width: 30%;
         margin-left: 0%;
         margin-right: 3%;
     }
-    
     .student:nth-child(3n) {
         margin-right: 0%;
-        
     }
+    
+     .color_key{
+        width: 85%;
+        margin: 2rem auto 0rem;
+        padding-top: 3rem;
+    }
+    
+    #filtered-portfolio{
+       padding-top: 1rem; 
+    }
+    
+    .razor_logo1 {
+        width: 55%;
+        height: 0%;
+        margin: 0 auto;
+    }
+    
+    .tnt_logo{
+        width: 25%;
+        height: 0%;
+        margin-left: 2rem;
+    }
+    
     
 }
 
-
 @media screen and (max-width: 450px) {
-   
     .student {
         width: 47%;
         margin-left: 0%;
         margin-right: 3%;
     }
-    
     .student:nth-child(2n) {
         margin-right: 0%;
-        
     }
-    
-    
 }
 
 
 /*    TABLET     */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-sizer,
+    .grid-item {
+        width: 33.3%;
+    }
     .lander_img_desktop {
         display: none;
     }
@@ -975,6 +1045,11 @@ h4 {
         width: 100%;
         font-size: 3rem;
     }
+    
+    .header_type{
+      width: 100%!important;  
+    }
+    
     .razor_logo {
         width: 13%;
         bottom: 5.5%;
@@ -986,15 +1061,92 @@ h4 {
     .dots {
         margin-top: 25rem;
     }
+    .student_div {
+        padding-bottom: 5rem;
+    }
+    .grid {
+        margin-left: 4.5rem;
+        padding-left: 0rem;
+        top: 3rem;
+    }
+    
+    .color_key{
+        width: 50%;
+        margin: 2rem auto -3rem;
+        padding-top: 3rem;
+    }
+    
+    .razor_logo1 {
+        width: 55%;
+        height: 0%;
+        margin: 0 auto;
+    }
+    
+    .tnt_logo{
+        width: 25%;
+        height: 0%;
+        margin-left: 2rem;
+    }
 }
 
 
 /*    DESKTOP     */
 
 @media screen and (min-width: 1024px) and (max-width: 2600px) {
+    
     .splash_img_tablet {
         display: none;
     }
+    
+    .bd_logo_type{
+        width: 50%;
+        margin-left: .5rem;
+    }
+    
+    .header_type{
+        margin-left: 8.3%!important;
+    }
+    
+    .map_mobile {
+        display: none;
+    }
+    
+    .student_div{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .color_key{
+        width: 30%;
+        margin: 2rem auto 0rem;
+    }
+    
+    .razor_logo1 {
+        width: 30%;
+        height: 0%;
+        margin: 0 auto 3rem;;
+    }
+    
+    .tnt_logo{
+        width: 15%;
+        height: 0%;
+        margin-left: 2rem;
+    }
+    
+    .grid {
+        margin: 0 auto;
+    }
+    
+    .ui-group{
+        margin-bottom: 5rem;
+    }
+    
+    #filtered-portfolio h4{
+        padding-top: 0rem;
+        
+    }
+    
+    
 }
 
 @-webkit-keyframes scroll_button {
