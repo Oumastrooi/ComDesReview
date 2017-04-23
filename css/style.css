@@ -388,8 +388,6 @@ h4 {
 }
 
 
-
-
 /* --------- PORTFOLIO SECTION -------*/
 
 #filtered-portfolio {
@@ -404,7 +402,7 @@ h4 {
 #filtered-portfolio h4 {
     margin-bottom: 2rem;
     padding-top: 2em;
-    font-family: 'usual',sans-serif;
+    font-family: 'usual', sans-serif;
     font-weight: 600;
     width: 75%;
     line-height: 1.5rem;
@@ -717,17 +715,17 @@ h4 {
     background-image: url(../img/Portfolio-Icons/Typography_Dark.png);
 }
 
-#advertising {
-    background-image: url(../img/Portfolio-Icons/Advertising_Light.png);
+#campaign {
+    background-image: url(../img/Portfolio-Icons/Campaign_Light.png);
     transition: background-image .6s ease-in-out;
 }
 
-#advertising:hover {
-    background-image: url(../img/Portfolio-Icons/Advertising_Dark.png);
+#campaign:hover {
+    background-image: url(../img/Portfolio-Icons/Campaign_Dark.png);
 }
 
-#advertising.is-checked {
-    background-image: url(../img/Portfolio-Icons/Advertising_Dark.png);
+#campaign.is-checked {
+    background-image: url(../img/Portfolio-Icons/Campaign_Dark.png);
 }
 
 #video {
@@ -866,7 +864,7 @@ ul.footer-logo {
     margin-left: auto;
 }
 
-.filter-count{
+.filter-count {
     width: 75%;
     text-align: center;
     margin: 0 auto;
@@ -894,11 +892,9 @@ ul.footer-logo {
     .student_div {
         padding-bottom: 5rem;
     }
-    
-    .student{
+    .student {
         width: 43%!important;
     }
-    
     .grid {
         margin: 0 auto;
         margin-left: 8.2%;
@@ -906,11 +902,9 @@ ul.footer-logo {
         top: 3rem;
         width: 90%!important;
     }
-    
     .map_desktop {
         display: none;
     }
-    
     .lander_info_lockup {
         position: absolute;
         width: 100%;
@@ -990,30 +984,24 @@ ul.footer-logo {
     .student:nth-child(3n) {
         margin-right: 0%;
     }
-    
-     .color_key{
+    .color_key {
         width: 85%;
         margin: 2rem auto 0rem;
         padding-top: 3rem;
     }
-    
-    #filtered-portfolio{
-       padding-top: 1rem; 
+    #filtered-portfolio {
+        padding-top: 1rem;
     }
-    
     .razor_logo1 {
         width: 55%;
         height: 0%;
         margin: 0 auto;
     }
-    
-    .tnt_logo{
+    .tnt_logo {
         width: 25%;
         height: 0%;
         margin-left: 2rem;
     }
-    
-    
 }
 
 @media screen and (max-width: 450px) {
@@ -1045,11 +1033,9 @@ ul.footer-logo {
         width: 100%;
         font-size: 3rem;
     }
-    
-    .header_type{
-      width: 100%!important;  
+    .header_type {
+        width: 100%!important;
     }
-    
     .razor_logo {
         width: 13%;
         bottom: 5.5%;
@@ -1069,20 +1055,17 @@ ul.footer-logo {
         padding-left: 0rem;
         top: 3rem;
     }
-    
-    .color_key{
+    .color_key {
         width: 50%;
         margin: 2rem auto -3rem;
         padding-top: 3rem;
     }
-    
     .razor_logo1 {
         width: 55%;
         height: 0%;
         margin: 0 auto;
     }
-    
-    .tnt_logo{
+    .tnt_logo {
         width: 25%;
         height: 0%;
         margin-left: 2rem;
@@ -1093,60 +1076,47 @@ ul.footer-logo {
 /*    DESKTOP     */
 
 @media screen and (min-width: 1024px) and (max-width: 2600px) {
-    
     .splash_img_tablet {
         display: none;
     }
-    
-    .bd_logo_type{
+    .bd_logo_type {
         width: 50%;
         margin-left: .5rem;
     }
-    
-    .header_type{
+    .header_type {
         margin-left: 8.3%!important;
     }
-    
     .map_mobile {
         display: none;
     }
-    
-    .student_div{
+    .student_div {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    
-    .color_key{
+    .color_key {
         width: 30%;
         margin: 2rem auto 0rem;
     }
-    
     .razor_logo1 {
         width: 30%;
         height: 0%;
-        margin: 0 auto 3rem;;
+        margin: 0 auto 3rem;
+        ;
     }
-    
-    .tnt_logo{
+    .tnt_logo {
         width: 15%;
         height: 0%;
         margin-left: 2rem;
     }
-    
     .grid {
         margin: 0 auto;
     }
-    
-    .ui-group{
+    .ui-group {
         margin-bottom: 5rem;
     }
-    
-    #filtered-portfolio h4{
+    #filtered-portfolio h4 {
         padding-top: 0rem;
-        
     }
-    
-    
 }
 
 @-webkit-keyframes scroll_button {
