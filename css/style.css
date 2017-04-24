@@ -240,6 +240,10 @@ h4 {
     transition: .5s ease;
 }
 
+.map_desktop img {
+    width: 100%;
+}
+
 .austin .overlay {
     background-color: rgba(236, 94, 94, .45);
 }
@@ -877,7 +881,7 @@ ul.footer-logo {
     width: 75%;
     text-align: center;
     margin: 0 auto;
-    color: white;
+    color: #DBDCDD;
     margin-top: 1.5rem;
 }
 
@@ -928,6 +932,15 @@ ul.footer-logo {
     .bd_logo {
         width: 8%
     }
+    .color-intro {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: #DBDCDD;
+    margin-top: 1.5rem;
+        padding-top: 3.5rem;
+        margin-bottom: -3rem;
+}
     .header_type {
         width: 100%!important;
         font-size: .9rem!important;
@@ -1004,12 +1017,45 @@ ul.footer-logo {
     .razor_logo1 {
         width: 55%;
         height: 0%;
-        margin: 0 auto;
+        margin: 0 auto 3rem;
     }
     .tnt_logo {
         width: 25%;
         height: 0%;
         margin-left: 2rem;
+    }
+    
+    .wilson_logo{
+        width: 28%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 4%!important;
+    }
+    
+    .cima_logo{
+        width: 20%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 2.5%!important;
+    }
+    
+    .minich_logo {
+        width: 11.5%;
+        height: 0%;
+    }
+    
+    .garner_logo {
+        width: 24%;
+        height: 0%;
+    }
+    
+    .geldenhuys_logo {
+        width: 25%;
+        height: 0%;
+    }
+    
+    .row img{
+        margin: 0 auto 2rem;
     }
 }
 
@@ -1056,6 +1102,15 @@ ul.footer-logo {
     .dots {
         margin-top: 25rem;
     }
+    .color-intro {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: #DBDCDD;
+    margin-top: 1.5rem;
+    padding-top: 3.5rem;
+    margin-bottom: -3rem;
+    }
     .student_div {
         padding-bottom: 5rem;
     }
@@ -1078,6 +1133,43 @@ ul.footer-logo {
         width: 25%;
         height: 0%;
         margin-left: 2rem;
+    }
+    
+    .wilson_logo{
+        width: 28%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 4%!important;
+    }
+    
+    .cima_logo{
+        width: 20%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 2.5%!important;
+    }
+    
+    .minich_logo {
+        width: 11.5%;
+        height: 0%;
+    }
+    
+    .garner_logo {
+        width: 24%;
+        height: 0%;
+    }
+    
+    .geldenhuys_logo {
+        width: 25%;
+        height: 0%;
+    }
+    
+    .row img{
+        margin: 0 auto 2rem;
+    }
+    
+    .map_mobile img {
+        width: 100%;
     }
 }
 
@@ -1125,6 +1217,39 @@ ul.footer-logo {
     }
     #filtered-portfolio h4 {
         padding-top: 0rem;
+    }
+    
+    .wilson_logo{
+        width: 20%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 3%!important;
+    }
+    
+    .cima_logo{
+        width: 15%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 1.5%!important;
+    }
+    
+    .minich_logo {
+        width: 9.5%;
+        height: 0%;
+    }
+    
+    .garner_logo {
+        width: 20%;
+        height: 0%;
+    }
+    
+    .geldenhuys_logo {
+        width: 21.5%;
+        height: 0%;
+    }
+    
+    .row img{
+        margin: 0 auto 2rem;
     }
 }
 
