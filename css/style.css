@@ -855,7 +855,7 @@ h4 {
 
 footer {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     background: rgba(236, 94, 94, 1);
     position: static;
     bottom: 0;
@@ -883,6 +883,19 @@ ul.footer-logo {
     margin: 0 auto;
     color: #DBDCDD;
     margin-top: 1.5rem;
+}
+
+.icon_lockup {
+    position: relative;
+    margin-top: 3em;
+    margin: 0 auto;
+    width: 20%;
+    animation-delay: .9s;
+    animation-timing-function: ease-out;
+}
+
+.icon_lockup i {
+    margin: 0 auto;
 }
 
 
@@ -1057,6 +1070,25 @@ ul.footer-logo {
     .row img{
         margin: 0 auto 2rem;
     }
+    .icon_lockup {
+    position: relative;
+    margin-top: 3em;
+    margin: 0 auto;
+    width: 60%;
+    animation-delay: .9s;
+    animation-timing-function: ease-out;
+}
+    .icon_lockup {
+        margin-top: 3rem;
+    }
+    
+    .icon_lockup i {
+        margin-left: .2rem;
+    }
+    
+    footer {
+        padding-bottom: 6em!important;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1084,6 +1116,14 @@ ul.footer-logo {
     .lander_img_tablet {
         display: block;
     }
+    .icon_lockup {
+    position: relative;
+    margin-top: 3em;
+    margin: 0 auto;
+    width: 30%;
+    animation-delay: .9s;
+    animation-timing-function: ease-out;
+}
     #clock {
         width: 100%;
         font-size: 3rem;
@@ -1171,6 +1211,17 @@ ul.footer-logo {
     .map_mobile img {
         width: 100%;
     }
+    .icon_lockup {
+        margin-top: 3rem;
+    }
+    
+    .icon_lockup i {
+        margin-left: .2rem;
+    }
+    
+    footer {
+        padding-bottom: 6em!important;
+    }
 }
 
 
@@ -1250,6 +1301,14 @@ ul.footer-logo {
     
     .row img{
         margin: 0 auto 2rem;
+    }
+    
+    .icon_lockup {
+        margin-top: 3rem;
+    }
+    
+    footer {
+        padding-bottom: 7em!important;
     }
 }
 
