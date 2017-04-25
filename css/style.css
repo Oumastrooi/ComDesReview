@@ -662,6 +662,7 @@ h4 {
 
 .col-sm-offset-2 {
     margin: 0px auto;
+    
 }
 
 
@@ -889,9 +890,11 @@ ul.footer-logo {
     position: relative;
     margin-top: 3em;
     margin: 0 auto;
-    width: 20%;
+    width: 100%;
     animation-delay: .9s;
     animation-timing-function: ease-out;
+    text-align: center;
+    
 }
 
 .icon_lockup i {
@@ -999,7 +1002,7 @@ ul.footer-logo {
     #portfolio_anchor {
         position: absolute;
         width: 25%;
-        margin-top: 175%
+        margin-top: 156.5%;
     }
     .grid {
         padding: 0em;
@@ -1074,9 +1077,10 @@ ul.footer-logo {
     position: relative;
     margin-top: 3em;
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     animation-delay: .9s;
     animation-timing-function: ease-out;
+        text-align: center;
 }
     .icon_lockup {
         margin-top: 3rem;
@@ -1120,9 +1124,10 @@ ul.footer-logo {
     position: relative;
     margin-top: 3em;
     margin: 0 auto;
-    width: 30%;
+    width: 100%;
     animation-delay: .9s;
     animation-timing-function: ease-out;
+        text-align: center;
 }
     #clock {
         width: 100%;
@@ -1222,6 +1227,30 @@ ul.footer-logo {
     footer {
         padding-bottom: 6em!important;
     }
+    #portfolio_anchor {
+        position: absolute;
+        width: 25%;
+        margin-top: 77.5%;
+    }
+    .ui-group {
+        margin-bottom: 5rem;
+        margin-left: -7.5rem;
+        width: 145%;
+    }
+    .first-row {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.two-row {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.three-row {
+    width: 800px;
+    margin: 0px auto;
+}
 }
 
 
@@ -1237,6 +1266,11 @@ ul.footer-logo {
     }
     .header_type {
         margin-left: 8.3%!important;
+    }
+    #portfolio_anchor {
+        position: absolute;
+        width: 25%;
+        margin-top: 48.5%;
     }
     .map_mobile {
         display: none;
