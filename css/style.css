@@ -268,6 +268,10 @@ h4 {
 .lbj .overlay {
     background-color: rgba(255, 195, 77, .45);
 }
+#map-link {
+    color: rgba(255, 195, 77, 1);
+    text-decoration: none;
+}
 
 .barton .overlay {
     background-color: rgba(0, 157, 157, .45);
@@ -888,10 +892,15 @@ ul.footer-logo {
 .filter-count {
     width: 75%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     color: #0A2436;
     margin-top: 1.5rem;
     font-weight: 700;
+}
+
+.little-map img {
+    width: 100%;
+    
 }
 
 .color-intro {
@@ -1047,21 +1056,29 @@ ul.footer-logo {
         margin: 0 auto 3rem;
     }
     .tnt_logo {
-        width: 25%;
+        width: 45%;
         height: 0%;
-        margin-left: 2rem;
+        margin: 0 auto;
+        clear: both;
+        
+        
     }
     .wilson_logo {
-        width: 28%;
+        width: 50%;
         height: 0%;
-        margin-left: 3rem;
+       margin: 0 auto;
+        margin-right: 25%!important;
         margin-top: 4%!important;
     }
     .cima_logo {
-        width: 20%;
+        width:50%;
         height: 0%;
-        margin-left: 3rem;
-        margin-top: 2.5%!important;
+        margin: 0 auto;
+        margin-right: 25%!important;
+        padding-bottom: 1rem;
+    }
+    .student_div h2 {
+        font-size: 1rem;
     }
     .minich_logo {
         width: 11.5%;
@@ -1105,6 +1122,13 @@ ul.footer-logo {
     .little-map img {
         width: 100%;
     }
+    footer h5{
+   
+        line-height: 1.4rem;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1140,6 +1164,9 @@ ul.footer-logo {
         animation-delay: .9s;
         animation-timing-function: ease-out;
         text-align: center;
+    }
+    .big-map {
+        display: none;
     }
     #clock {
         width: 100%;
@@ -1191,10 +1218,28 @@ ul.footer-logo {
         margin-left: 2rem;
     }
     .wilson_logo {
-        width: 28%;
+        width: 30%;
         height: 0%;
         margin-left: 3rem;
-        margin-top: 4%!important;
+        margin-top: 0%!important;
+    }
+    .names{
+        width: 100%;
+        margin: 0 auto;
+        
+       
+    }
+    footer h5{
+    width: 100%;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        margin: 0 auto;
+    }
+    .cima_logo {
+        width: 30%;
+        height: 0%;
+        margin-left: 3rem;
+        margin-top: 2.5%!important;
     }
     .row img {
         margin: 0 auto 2rem;
@@ -1230,6 +1275,7 @@ ul.footer-logo {
         width: 800px;
         margin: 0px auto;
     }
+    
 }
 
 
@@ -1251,6 +1297,21 @@ ul.footer-logo {
         width: 25%;
         margin-top: 48.5%;
     }
+    
+    .cima_logo {
+        width: 20%;
+        height: 0%;
+    }
+    
+    .names{
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+       
+    }
     .student_div {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -1263,7 +1324,12 @@ ul.footer-logo {
         width: 30%;
         height: 0%;
         margin: 0 auto 3rem;
-        ;
+        
+    }
+    footer h5{
+   
+        line-height: 1.4rem;
+        margin: 0 auto;
     }
     .grid {
         margin: 0 auto;
