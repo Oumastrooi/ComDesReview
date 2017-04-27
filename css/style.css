@@ -88,6 +88,22 @@ video {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
+
+h2 a {
+    font-size: 1.2em;
+    color: white;
+}
+
+h5 {
+    color: white;
+    font-size: 1.3em;
+}
+
 
 /* HTML5 display-role reset for older browsers */
 
@@ -165,6 +181,11 @@ h3 {
     white-space: nowrap;
 }
 
+#map-link {
+    font-size: inherit;
+    text-decoration: underline;
+}
+
 a {
     text-align: center;
     line-height: 1.7em;
@@ -238,10 +259,6 @@ h4 {
     width: 100%;
     height: 0;
     transition: .5s ease;
-}
-
-.map_desktop img {
-    width: 100%;
 }
 
 .austin .overlay {
@@ -662,7 +679,6 @@ h4 {
 
 .col-sm-offset-2 {
     margin: 0px auto;
-    
 }
 
 
@@ -894,7 +910,6 @@ ul.footer-logo {
     animation-delay: .9s;
     animation-timing-function: ease-out;
     text-align: center;
-    
 }
 
 .icon_lockup i {
@@ -931,9 +946,6 @@ ul.footer-logo {
         top: 3rem;
         width: 90%!important;
     }
-    .map_desktop {
-        display: none;
-    }
     .lander_info_lockup {
         position: absolute;
         width: 100%;
@@ -949,14 +961,14 @@ ul.footer-logo {
         width: 8%
     }
     .color-intro {
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    color: #DBDCDD;
-    margin-top: 1.5rem;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        color: #DBDCDD;
+        margin-top: 1.5rem;
         padding-top: 3.5rem;
         margin-bottom: -3rem;
-}
+    }
     .header_type {
         width: 100%!important;
         font-size: .9rem!important;
@@ -1025,7 +1037,6 @@ ul.footer-logo {
     .color_key {
         width: 85%;
         margin: 2rem auto 0rem;
-        padding-top: 3rem;
     }
     #filtered-portfolio {
         padding-top: 1rem;
@@ -1040,58 +1051,59 @@ ul.footer-logo {
         height: 0%;
         margin-left: 2rem;
     }
-    
-    .wilson_logo{
+    .wilson_logo {
         width: 28%;
         height: 0%;
         margin-left: 3rem;
         margin-top: 4%!important;
     }
-    
-    .cima_logo{
+    .cima_logo {
         width: 20%;
         height: 0%;
         margin-left: 3rem;
         margin-top: 2.5%!important;
     }
-    
     .minich_logo {
         width: 11.5%;
         height: 0%;
     }
-    
     .garner_logo {
         width: 24%;
         height: 0%;
     }
-    
     .geldenhuys_logo {
         width: 25%;
         height: 0%;
     }
-    
-    .row img{
+    .row img {
         margin: 0 auto 2rem;
     }
     .icon_lockup {
-    position: relative;
-    margin-top: 3em;
-    margin: 0 auto;
-    width: 100%;
-    animation-delay: .9s;
-    animation-timing-function: ease-out;
+        position: relative;
+        margin-top: 3em;
+        margin: 0 auto;
+        width: 100%;
+        animation-delay: .9s;
+        animation-timing-function: ease-out;
         text-align: center;
-}
+    }
     .icon_lockup {
         margin-top: 3rem;
     }
-    
     .icon_lockup i {
         margin-left: .2rem;
     }
-    
     footer {
         padding-bottom: 6em!important;
+    }
+    h5 {
+        line-height: 2em;
+    }
+    .big-map {
+        display: none;
+    }
+    .little-map img {
+        width: 100%;
     }
 }
 
@@ -1121,14 +1133,14 @@ ul.footer-logo {
         display: block;
     }
     .icon_lockup {
-    position: relative;
-    margin-top: 3em;
-    margin: 0 auto;
-    width: 100%;
-    animation-delay: .9s;
-    animation-timing-function: ease-out;
+        position: relative;
+        margin-top: 3em;
+        margin: 0 auto;
+        width: 100%;
+        animation-delay: .9s;
+        animation-timing-function: ease-out;
         text-align: center;
-}
+    }
     #clock {
         width: 100%;
         font-size: 3rem;
@@ -1148,13 +1160,13 @@ ul.footer-logo {
         margin-top: 25rem;
     }
     .color-intro {
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    color: #DBDCDD;
-    margin-top: 1.5rem;
-    padding-top: 3.5rem;
-    margin-bottom: -3rem;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        color: #DBDCDD;
+        margin-top: 1.5rem;
+        padding-top: 3.5rem;
+        margin-bottom: -3rem;
     }
     .student_div {
         padding-bottom: 5rem;
@@ -1167,7 +1179,6 @@ ul.footer-logo {
     .color_key {
         width: 50%;
         margin: 2rem auto -3rem;
-        padding-top: 3rem;
     }
     .razor_logo1 {
         width: 55%;
@@ -1179,51 +1190,21 @@ ul.footer-logo {
         height: 0%;
         margin-left: 2rem;
     }
-    
-    .wilson_logo{
+    .wilson_logo {
         width: 28%;
         height: 0%;
         margin-left: 3rem;
         margin-top: 4%!important;
     }
-    
-    .cima_logo{
-        width: 20%;
-        height: 0%;
-        margin-left: 3rem;
-        margin-top: 2.5%!important;
-    }
-    
-    .minich_logo {
-        width: 11.5%;
-        height: 0%;
-    }
-    
-    .garner_logo {
-        width: 24%;
-        height: 0%;
-    }
-    
-    .geldenhuys_logo {
-        width: 25%;
-        height: 0%;
-    }
-    
-    .row img{
+    .row img {
         margin: 0 auto 2rem;
-    }
-    
-    .map_mobile img {
-        width: 100%;
     }
     .icon_lockup {
         margin-top: 3rem;
     }
-    
     .icon_lockup i {
         margin-left: .2rem;
     }
-    
     footer {
         padding-bottom: 6em!important;
     }
@@ -1238,19 +1219,17 @@ ul.footer-logo {
         width: 145%;
     }
     .first-row {
-    width: 800px;
-    margin: 0px auto;
-}
-
-.two-row {
-    width: 800px;
-    margin: 0px auto;
-}
-
-.three-row {
-    width: 800px;
-    margin: 0px auto;
-}
+        width: 800px;
+        margin: 0px auto;
+    }
+    .two-row {
+        width: 800px;
+        margin: 0px auto;
+    }
+    .three-row {
+        width: 800px;
+        margin: 0px auto;
+    }
 }
 
 
@@ -1272,9 +1251,6 @@ ul.footer-logo {
         width: 25%;
         margin-top: 48.5%;
     }
-    .map_mobile {
-        display: none;
-    }
     .student_div {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -1289,11 +1265,6 @@ ul.footer-logo {
         margin: 0 auto 3rem;
         ;
     }
-    .tnt_logo {
-        width: 15%;
-        height: 0%;
-        margin-left: 2rem;
-    }
     .grid {
         margin: 0 auto;
     }
@@ -1303,46 +1274,20 @@ ul.footer-logo {
     #filtered-portfolio h4 {
         padding-top: 0rem;
     }
-    
-    .wilson_logo{
-        width: 20%;
-        height: 0%;
-        margin-left: 3rem;
-        margin-top: 3%!important;
-    }
-    
-    .cima_logo{
-        width: 15%;
-        height: 0%;
-        margin-left: 3rem;
-        margin-top: 1.5%!important;
-    }
-    
-    .minich_logo {
-        width: 9.5%;
-        height: 0%;
-    }
-    
-    .garner_logo {
-        width: 20%;
-        height: 0%;
-    }
-    
-    .geldenhuys_logo {
-        width: 21.5%;
-        height: 0%;
-    }
-    
-    .row img{
+    .row img {
         margin: 0 auto 2rem;
     }
-    
     .icon_lockup {
         margin-top: 3rem;
     }
-    
     footer {
         padding-bottom: 7em!important;
+    }
+    .big-map img {
+        width: 100%;
+    }
+    .little-map {
+        display: none;
     }
 }
 

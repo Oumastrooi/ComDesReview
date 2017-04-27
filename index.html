@@ -2,9 +2,28 @@
 <html lang="en">
 
 <head>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98216774-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Behind The Design</title>
+    <meta name="description" content="Behind the Design Exit Review Spring 2017" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -61,7 +80,7 @@
                     <img class="bd_logo_type  animated fadeInUp" src="img/behind_the_design_logo_type.png" />
                     <p class="process animated fadeInUp">Be a part of the process.</p>
                     <br>
-                    <a href="https://goo.gl/maps/bmYGgswtC8H2">
+                    <a href="https://goo.gl/maps/bmYGgswtC8H2" target="_blank">
                         <h1 class="event_details animated fadeInUp">May 4th &nbsp | &nbsp 6 &ndash; 8:30pm &nbsp <br>300 W 6th St. Suite #1600, Austin, TX </h1>
                     </a>
                 </div>
@@ -139,9 +158,9 @@
 
         </div>
         <div class="student_div">
-            <h2 class="color-intro">Find us in these rooms at Exit Review: </h2>
-            <img class="color_key" src="img/color_key.png" />
+            <h2 style="padding-top: 3em;">Find us in these rooms at Exit Review: <a href="#map" id="map-link">See map below</a> </h2>
 
+            <img class="color_key" src="img/color_key.png" />
 
 
             <div class="grid student_div">
@@ -852,17 +871,16 @@
             <!--End of a student-->
 
         </div>
-
-        <div class="map_desktop">
-            <img src="img/map_desktop.jpg" />
-        </div>
-
-        <div class="map_mobile">
-            <img src="img/map_mobile.jpg" />
-        </div>
-
+        <section id="map">
+            <div class="big-map">
+                <img src="img/map_desktop.jpg" />
+            </div>
+            <div class="little-map">
+                <img src="img/map_mobile.jpg" />
+            </div>
+        </section>
         <footer>
-            
+
             <div class="container centered">
                 <div class="row">
                     <h4> Hosted by: </h4>
@@ -875,23 +893,32 @@
                     <h4> Special Thanks to our Platinum Sponsors: </h4>
                 </div>
                 <div class="row">
-                    
-                        <img class="tnt_logo" src="img/tnt_logo.png" />
-                        <img class="wilson_logo" src="img/wilsonart_logo.png"/>
-                        <img class="cima_logo" src="img/CIMA_logo.png"/>
-                    
-                 </div>
-                
-                <div class="row">
-                    <img class="minich_logo" src="img/minich_logo.png"/>
-                    <img class="minich_logo" src="img/runge_logo.png"/>
-                    <img class="garner_logo" src="img/garner_logo.png"/>
-                    <img class="geldenhuys_logo" src="img/geldenhuys_logo.png"/>
-                    
-                    
-                
+
+                    <img src="img/tnt_logo.png" alt="tacos and tequila logo">
+                    <img src="img/wilsonart_logo.png" alt="wilson art logo">
+                    <img src="img/CIMA_logo.png" alt="cima logo">
+                    <img src="img/ced-logo.png" alt="ced logo">
+
                 </div>
-                
+
+                <div class="row" style="margin-left: auto; margin-right: auto;">
+                    <div class="col-xs-3 col-sm-3 col-sm-offset-1 col-md-offset-2">
+                        <h5>Damian & Stacy <br>Bailes</h5>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <h5>Kyle Minich</h5>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+
+                        <h5>Brian & Donna <br>Garner</h5>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <h5>Sean Runge</h5>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <h5>James & Karen<br>Geldenhuys</h5>
+                    </div>
+                </div>
                 <div class="icon_lockup animated fadeInUp">
 
                     <a href="https://www.facebook.com/txstate.comdesreview" target="_blank">
@@ -909,7 +936,7 @@
                 </div>
 
 
-                
+
             </div>
 
         </footer>
