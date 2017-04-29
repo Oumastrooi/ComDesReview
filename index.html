@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://comdesreview.com/" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
     <script>
@@ -18,12 +18,19 @@
         ga('create', 'UA-98216774-1', 'auto');
         ga('send', 'pageview');
     </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Behind The Design</title>
     <meta name="description" content="Behind the Design Exit Review Spring 2017" />
+
+    <meta property="og:url" content="http://comdesreview.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Texas State ComDes Exit Review 2017" />
+    <meta property="og:description" content="Check out the hardwork and amazing projects we've put together. Meet the designers behind it all on May 4th at Sapient Razorfish in Austin." />
+    <meta property="og:image" content="http://comdesreview.com/img/facebook-preview.png" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -123,35 +130,31 @@
 
         <div class="col-sm-offset-2 col-sm-8 filters">
 
-
             <div class="ui-group">
-
-
                 <div class="js-radio-button">
                     <div class="row first-row">
-                        <button class="button  wow fadeInRight" id="branding" data-filter=".branding">Branding</button>
-                        <button class="button wow fadeInRight" id="responsive" data-filter=".responsive" style="animation-delay: .01s;">Responsive Design</button>
-                        <button class="button wow fadeInRight" id="illustration" data-filter=".illustration" style="animation-delay: .02s;">Illustration</button>
-                        <button class="button wow fadeInRight" id="typography" data-filter=".typography" style="animation-delay: .03s;">Typography</button>
+
+                        <button class="button  wow fadeInRight" id="branding" data-filter=".branding" onClick="ga('send', 'event', 'Filter', 'Click', 'branding', 1 );"> Branding</button>
+                        <button class="button wow fadeInRight" id="responsive" data-filter=".responsive" style="animation-delay: .01s;" onClick="ga('send', 'event', 'Filter', 'Click', 'responsive', 1 );">Responsive Design</button>
+                        <button class="button wow fadeInRight" id="illustration" data-filter=".illustration" style="animation-delay: .02s;" onClick="ga('send', 'event', 'Filter', 'Click', 'illustration', 1 );">Illustration</button>
+                        <button class="button wow fadeInRight" id="typography" data-filter=".typography" style="animation-delay: .03s;" onClick="ga('send', 'event', 'Filter', 'Click', 'typography', 1 );">Typography</button>
+
                     </div>
                     <div class="row two-row">
-                        <button class="button wow fadeInRight" id="campaign" data-filter=".campaign" style="animation-delay: .04s;">Advertising</button>
-                        <button class="button wow fadeInRight" id="video" data-filter=".video" style="animation-delay: .05s;">Video</button>
-                        <button class="button wow fadeInRight" id="packaging" data-filter=".packaging" style="animation-delay: .06s;">Package Design</button>
-                        <button class="button wow fadeInRight" id="photography" data-filter=".photography" style="animation-delay: .07s;">Photography</button>
+                        <button class="button wow fadeInRight" id="campaign" data-filter=".campaign" style="animation-delay: .04s;" onClick="ga('send', 'event', 'Filter', 'Click', 'advertising', 1 );">Advertising</button>
+                        <button class="button wow fadeInRight" id="video" data-filter=".video" style="animation-delay: .05s;" onClick="ga('send', 'event', 'Filter', 'Click', 'video', 1 );">Video</button>
+                        <button class="button wow fadeInRight" id="packaging" data-filter=".packaging" style="animation-delay: .06s;" onClick="ga('send', 'event', 'Filter', 'Click', 'package', 1 );">Package Design</button>
+                        <button class="button wow fadeInRight" id="photography" data-filter=".photography" style="animation-delay: .07s;" onClick="ga('send', 'event', 'Filter', 'Click', 'photography', 1 );">Photography</button>
                     </div>
                     <div class="row three-row">
-                        <button class="button wow fadeInRight" id="product" data-filter=".product" style="animation-delay: .08s;">Product Design</button>
-                        <button class="button wow fadeInRight" id="editorial" data-filter=".editorial" style="animation-delay: .09s;">Editorial Design</button>
-                        <button class="button wow fadeInRight" id="frontend" data-filter=".frontend" style="animation-delay: .1s;">Front End Development</button>
-                        <button class="button wow fadeInRight" id="UXUI" data-filter=".UXUI" style="animation-delay: .16s;">UX|UI</button>
+                        <button class="button wow fadeInRight" id="product" data-filter=".product" style="animation-delay: .08s;" onClick="ga('send', 'event', 'Filter', 'Click', 'product', 1 );">Product Design</button>
+                        <button class="button wow fadeInRight" id="editorial" data-filter=".editorial" style="animation-delay: .09s;" onClick="ga('send', 'event', 'Filter', 'Click', 'editorial', 1 );">Editorial Design</button>
+                        <button class="button wow fadeInRight" id="frontend" data-filter=".frontend" style="animation-delay: .1s;" onClick="ga('send', 'event', 'Filter', 'Click', 'development', 1 );">Front End Development</button>
+                        <button class="button wow fadeInRight" id="UXUI" data-filter=".UXUI" style="animation-delay: .16s;" onClick="ga('send', 'event', 'Filter', 'Click', 'ux', 1 );">UX|UI</button>
                     </div>
-
                 </div>
-
                 <h2 class="filter-count">
                 </h2>
-
             </div>
 
 
@@ -664,8 +667,10 @@
                 </div>
                 <!--End of a student-->
 
+
+
                 <div class="barton student branding	campaign	packaging frontend">
-                    <a href="http://www.karlynelisabeth.com" target="_blank">
+                    <a href="http://www.foulmouthcreative.com/" target="_blank">
                         <img src="img/headshots/jonesK.bw.jpg" class="headshot" />
                         <div class="overlay">
                             <img src="img/Portfolio-Icons/Branding_Dark.png" class="tag" />
@@ -676,7 +681,7 @@
                         <h3>Karlyn Jones</h3>
                     </a>
                 </div>
-                <!--End of a student-->
+
 
                 <div class="lbj student branding illustration editorial photography">
                     <a href="http://www.simplykendesign.com" target="_blank">
@@ -912,14 +917,14 @@
 
                         <h5>Brian & Donna <br>Garner</h5>
                     </div>
-                    
+
                     <div class="col-xs-3 col-sm-2">
                         <h5>Sean Runge</h5>
                     </div>
                     <div class="col-xs-3 col-sm-2">
                         <h5>James & Karen<br>Geldenhuys</h5>
                     </div>
-                        
+
                 </div>
                 <div class="icon_lockup animated fadeInUp">
 
